@@ -4,15 +4,16 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour {
 
-	public float forwardSpeed;
-	public float sidewaysSpeed;
-	public float moveForce;
+	public float launchForce;
 
 	private Rigidbody rigBody;
+	private Player player;
+	private NoGravityPhysicsStuff noGravityScript;
 
 	// Use this for initialization
 	void Awake () {
-		rigBody = GetComponent<Rigidbody> ();
+		player = GetComponent<Player> ();
+		noGravityScript = GetComponent<NoGravityPhysicsStuff> ();
 	}
 
 	void Update () {
@@ -21,8 +22,23 @@ public class PlayerController : MonoBehaviour {
 		}
 
 		// Move
-		var z = Input.GetAxisRaw("Vertical") * Time.deltaTime * forwardSpeed;
-		//transform.Translate(0, 0, z);
-		rigBody.AddForce (Camera.main.transform.forward * z);
+		if (player.isGrabbed && Input.GetKeyDown (KeyCode.W)) {
+			noGravityScript.Launch (Camera.main.transform.forward * launchForce);
+			player.isGrabbed = false;
+		}
 	}
+
+	void OnTriggerEnter (Collider col) {
+		if (col.gameObject.tag == "launchygrabby") {
+			player.isGrabbed = true;
+			noGravityScript.Stop ();
+		}
+	}
+
+	void OnTriggerExit (Collider col) {
+		if (col.gameObject.tag == "launchygrabby") {
+			player.isGrabbed = false;
+		}
+	}
+
 }

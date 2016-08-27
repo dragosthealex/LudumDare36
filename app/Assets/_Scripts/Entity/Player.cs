@@ -3,9 +3,14 @@ using System.Collections;
 
 public class Player : MonoBehaviour {
 
+	public bool isGrabbed;
+
+	private Rigidbody rigBody;
+
 	// Use this for initialization
-	void Start () {
-	
+	void Awake () {
+		rigBody = GetComponent<Rigidbody> ();
+		isGrabbed = true;
 	}
 	
 	// Update is called once per frame
@@ -20,4 +25,6 @@ public class Player : MonoBehaviour {
 	private void UpdatePlayer() {
 		
 	}
+
+
 }
