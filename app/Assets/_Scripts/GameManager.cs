@@ -9,11 +9,8 @@ public class GameManager : MonoBehaviour {
 
 	public bool isPaused = false; // Whether game is pause
 
-	public GameObject mariaPF = null;
-	public GameObject maria = null; // Instance of Maria player <3
-	public GameObject mariaSpawn;
-	public GameObject dragosPF = null;
-	public GameObject dragos = null; // Instance of Dragos TODO
+	public GameObject playerPF;
+	public GameObject player;
 
 	public int level;
 

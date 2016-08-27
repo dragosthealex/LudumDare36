@@ -4,23 +4,9 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour {
 
-	public GameObject cameraPF; // Camera prefab, only for local
-	private GameObject theCamera; // Camera object
-
-	public string name;
-
 	// Use this for initialization
 	void Awake () {
-		///// SINGLE PLAYER
-		// Set camera
-		//theCamera = Instantiate (cameraPF) as GameObject;
-		//theCamera.transform.parent = this.gameObject.transform;
-		// Set name
-		if (GameManager.instance.level == 1) {
-			name = "Maria";
-		} else {
-			name = "Dragos";
-		}
+		
 	}
 	
 	// Update is called once per frame

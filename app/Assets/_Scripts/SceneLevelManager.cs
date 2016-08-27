@@ -10,18 +10,13 @@ public class SceneLevelManager : MonoBehaviour {
 			// Do nothing
 			break;
 		case 1:
-			// Maria
-			// Spawn
-			GameObject maria = Instantiate (GameManager.instance.mariaPF, 
-				                   GameManager.instance.mariaSpawn.transform.position, 
-				                   new Quaternion (0, 0, 0, 0)) as GameObject;
-			GameManager.instance.maria = maria;
-			print(maria.activeSelf);
+			// In game screen
 			break;
 		case 2:
-			// Dragos
+			// Training room
+			// Setup player
+			GameManager.instance.player = Instantiate (GameManager.instance.playerPF);
 			break;
 		}
-
 	}
 }
