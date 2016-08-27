@@ -11,12 +11,14 @@ public class SceneLevelManager : MonoBehaviour {
 			break;
 		case 1:
 			// In game screen
+			GameManager.instance.hideMouse();
 			break;
 		case 2:
 			// Training room
 			// Setup player
+			GameManager.instance.hideMouse();
 			GameManager.instance.player = Instantiate (GameManager.instance.playerPF);
-			break;
+			break;	
 		}
 	}
 }

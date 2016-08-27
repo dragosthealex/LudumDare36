@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour {
 	public GameObject playerPF;
 	public GameObject player;
 
+	private bool menuActive;
+
 	public int level;
 
 	void Awake () {
@@ -37,12 +39,32 @@ public class GameManager : MonoBehaviour {
 		sceneScript.setupScene (level);
 	}
 
-	public void StartMaria() {
-		SceneManager.LoadScene (1);
+	public void Menu() {
+		if (menuActive) {
+			// hide menu panel & lock cursor
+			hideMouse();
+			menuActive = false;
+		} else {
+			// show menu panel & unlock cursor
+			showMouse();
+			menuActive = true;
+		}
 	}
 
-	public void StartDragos() {
-		SceneManager.LoadScene (2);
+	public void showMouse() {
+		Cursor.lockState = CursorLockMode.None;
+		Cursor.visible = true;
 	}
 
+	public void hideMouse() {
+		Cursor.lockState = CursorLockMode.Locked;
+		Cursor.visible = false;
+	}
+
+	void Update() {
+		// Menu
+		if (Input.GetKeyDown (KeyCode.Escape)) {
+			Menu ();
+		}
+	}
 }
