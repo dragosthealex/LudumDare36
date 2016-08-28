@@ -9,23 +9,18 @@ public class LaserGun : MonoBehaviour {
 	public void  Fire() {
 		StopCoroutine ("FireLaser");
 		StartCoroutine ("FireLaser");
+
+		RaycastHit hit;
+		Debug.DrawRay (tip.position, tip.forward * 50);
+		if (Physics.Raycast (tip.position, tip.forward, out hit, 50)) {
+			print (hit.collider.gameObject.name);
+		}
 	}
 
 	IEnumerator FireLaser() {
-
 		while (Input.GetKey (KeyCode.Mouse0)) {
 			GameObject bullet = Instantiate (bulletPrefab, tip.position, tip.rotation) as GameObject;
-			/*
-			Ray ray = new Ray (transform.position, transform.forward);
-			RaycastHit hit;
-
-			if(Physics.Raycast(ray, out hit, 50)) {
-				// Hit stuff
-				if (hit.rigidbody) {
-					hit.rigidbody.AddExplosionForce (2000f, hit.point, 15);
-				}
-			}*/
-			yield return new WaitForSeconds(0.25f);
+			yield return new WaitForSeconds(1f);
 		}
 	}
 }

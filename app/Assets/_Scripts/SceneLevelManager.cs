@@ -3,6 +3,12 @@ using System.Collections;
 
 public class SceneLevelManager : MonoBehaviour {
 
+	private GameManager gameManager;
+
+	void Awake () {
+		gameManager = GameManager.instance.GetComponent<GameManager>();	
+	}
+
 	public void setupScene(int level) {
 		switch (level) {
 		case 0:
@@ -17,7 +23,7 @@ public class SceneLevelManager : MonoBehaviour {
 			// Training room
 			// Setup player
 			GameManager.instance.hideMouse();
-			GameManager.instance.player = Instantiate (GameManager.instance.playerPF);
+			GameManager.instance.player = Instantiate (gameManager.playerPF, gameManager.SP_spawn.position, gameManager.SP_spawn.rotation) as GameObject;
 			break;	
 		}
 	}

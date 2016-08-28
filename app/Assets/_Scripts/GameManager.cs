@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour {
 
 	public GameObject playerPF;
 	public GameObject player;
+	public Transform SP_spawn;
 
 	private bool menuActive;
 
@@ -23,6 +24,7 @@ public class GameManager : MonoBehaviour {
 			Destroy (this.gameObject);
 		}
 
+		SP_spawn = GameObject.FindWithTag ("Respawn").transform;
 		sceneScript = GetComponent<SceneLevelManager> ();
 		level = 0;
 

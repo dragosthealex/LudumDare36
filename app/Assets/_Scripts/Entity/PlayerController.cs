@@ -5,15 +5,18 @@ using System.Collections;
 public class PlayerController : MonoBehaviour {
 
 	public float launchForce;
+	public GameObject gunPrefab;
 
 	private Rigidbody rigBody;
 	private Player player;
 	private NoGravityPhysicsStuff noGravityScript;
+	private LaserGun gun;
 
 	// Use this for initialization
 	void Awake () {
 		player = GetComponent<Player> ();
 		noGravityScript = GetComponent<NoGravityPhysicsStuff> ();
+		gun = gunPrefab.GetComponent<LaserGun> ();
 	}
 
 	void Update () {
@@ -25,6 +28,11 @@ public class PlayerController : MonoBehaviour {
 		if (player.isGrabbed && Input.GetKeyDown (KeyCode.W)) {
 			noGravityScript.Launch (Camera.main.transform.forward * launchForce);
 			player.isGrabbed = false;
+		}
+
+		// Shoot
+		if (Input.GetKeyDown (KeyCode.Mouse0)) {
+			gun.Fire ();
 		}
 	}
 
