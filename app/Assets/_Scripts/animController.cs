@@ -19,4 +19,12 @@ public class AnimController : MonoBehaviour {
 	public void SetShoot() {
 		animator.SetTrigger ("shoot");
 	}
+
+	public void SetGrab() {
+		animator.SetTrigger ("grab");
+	}
+
+	public void SetLaunch() {
+		animator.SetTrigger ("launch");
+	}
 }
