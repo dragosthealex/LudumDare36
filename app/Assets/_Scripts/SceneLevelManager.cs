@@ -25,6 +25,7 @@ public class SceneLevelManager : MonoBehaviour {
 			GameManager.instance.player = Instantiate (gameManager.playerPF, gameManager.SP_spawn.position, gameManager.SP_spawn.rotation) as GameObject;
 			// Set start scene false in ui
 			TheUI.instance.startScript.inMainMenu = false;
+			TheUI.instance.panelsScript.HideMenu ();
 			break;	
 		case 2:
 			// In game screen
