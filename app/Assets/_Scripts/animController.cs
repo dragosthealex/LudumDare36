@@ -1,17 +1,22 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class animController : MonoBehaviour {
+public class AnimController : MonoBehaviour {
 
+	public GameObject animatedModel;
 	private Animator animator;
 
 	// Use this for initialization
 	void Start () {
-		animator = GetComponent<Animator> ();	
+		animator = animatedModel.GetComponent<Animator> ();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+
+	public void SetShooting(bool value) {
+		print ("shooting " + value);
+		animator.SetBool ("shooting", value);
+	}
+
+	public void SetShoot() {
+		animator.SetTrigger ("shoot");
 	}
 }
