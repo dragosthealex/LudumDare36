@@ -24,7 +24,6 @@ public class GameManager : MonoBehaviour {
 			Destroy (this.gameObject);
 		}
 
-		SP_spawn = GameObject.FindWithTag ("Respawn").transform;
 		sceneScript = GetComponent<SceneLevelManager> ();
 		level = 0;
 
@@ -41,16 +40,8 @@ public class GameManager : MonoBehaviour {
 		sceneScript.setupScene (level);
 	}
 
-	public void Menu() {
-		if (menuActive) {
-			// hide menu panel & lock cursor
-			hideMouse();
-			menuActive = false;
-		} else {
-			// show menu panel & unlock cursor
-			showMouse();
-			menuActive = true;
-		}
+	public void RestartGame() {
+		SceneManager.LoadScene (0);
 	}
 
 	public void showMouse() {
@@ -64,9 +55,6 @@ public class GameManager : MonoBehaviour {
 	}
 
 	void Update() {
-		// Menu
-		if (Input.GetKeyDown (KeyCode.Escape)) {
-			Menu ();
-		}
+
 	}
 }

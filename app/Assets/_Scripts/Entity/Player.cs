@@ -4,6 +4,11 @@ using System.Collections;
 public class Player : MonoBehaviour {
 
 	public bool isGrabbed;
+	public GameObject canGrabTo;
+	public GameObject grabbedTo;
+	public Vector3 grabbedOffset;
+	public Quaternion grabbedOffsetRot;
+	public float grabbedDistance;
 
 	private Rigidbody rigBody;
 

@@ -1,44 +1,48 @@
 fileFormatVersion: 2
-guid: a447b10e486877547af3e89a61edb3db
-timeCreated: 1472442671
+guid: 1118a523b0ef8db4484e5e87ca5920b1
+timeCreated: 1472451934
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: 1
-    100002: 2
-    100004: 3
-    100006: 4
-    100008: 5
-    100010: 6
+    100000: 1_Plane.001_None
+    100002: 2_Plane.003_None
+    100004: 3_Plane.000_None
+    100006: 4_Plane.007_None
+    100008: 5_Plane.009_None
+    100010: 6_Plane.004_None
     100012: //RootNode
-    400000: 1
-    400002: 2
-    400004: 3
-    400006: 4
-    400008: 5
-    400010: 6
+    400000: 1_Plane.001_None
+    400002: 2_Plane.003_None
+    400004: 3_Plane.000_None
+    400006: 4_Plane.007_None
+    400008: 5_Plane.009_None
+    400010: 6_Plane.004_None
     400012: //RootNode
-    2300000: 1
-    2300002: 2
-    2300004: 3
-    2300006: 4
-    2300008: 5
-    2300010: 6
-    3300000: 1
-    3300002: 2
-    3300004: 3
-    3300006: 4
-    3300008: 5
-    3300010: 6
-    4300000: 5
-    4300002: 4
-    4300004: 6
-    4300006: 2
-    4300008: 1
-    4300010: 3
-    7400000: Default Take
-    9500000: //RootNode
+    2300000: 1_Plane.001_None
+    2300002: 2_Plane.003_None
+    2300004: 3_Plane.000_None
+    2300006: 4_Plane.007_None
+    2300008: 5_Plane.009_None
+    2300010: 6_Plane.004_None
+    3300000: 1_Plane.001_None
+    3300002: 2_Plane.003_None
+    3300004: 3_Plane.000_None
+    3300006: 4_Plane.007_None
+    3300008: 5_Plane.009_None
+    3300010: 6_Plane.004_None
+    4300000: 1_Plane.001_None
+    4300002: 2_Plane.003_None
+    4300004: 3_Plane.000_None
+    4300006: 4_Plane.007_None
+    4300008: 5_Plane.009_None
+    4300010: 6_Plane.004_None
+    6400000: 1_Plane.001_None
+    6400002: 2_Plane.003_None
+    6400004: 3_Plane.000_None
+    6400006: 4_Plane.007_None
+    6400008: 5_Plane.009_None
+    6400010: 6_Plane.004_None
   materials:
     importMaterials: 1
     materialName: 0
@@ -65,7 +69,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
@@ -97,7 +101,7 @@ ModelImporter:
     rootMotionBoneName: 
     hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

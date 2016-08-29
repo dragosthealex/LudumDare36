@@ -13,18 +13,23 @@ public class SceneLevelManager : MonoBehaviour {
 		switch (level) {
 		case 0:
 			// Start game screen
-			// Do nothing
+			// Set start scene in ui and show menu panel
+			TheUI.instance.startScript.inMainMenu = true;
+			TheUI.instance.panelsScript.ShowMenu ();
 			break;
 		case 1:
-			// In game screen
-			GameManager.instance.hideMouse();
-			break;
-		case 2:
 			// Training room
 			// Setup player
-			GameManager.instance.hideMouse();
+			GameManager.instance.hideMouse ();
+			GameManager.instance.SP_spawn = GameObject.FindGameObjectWithTag ("Respawn").transform;
 			GameManager.instance.player = Instantiate (gameManager.playerPF, gameManager.SP_spawn.position, gameManager.SP_spawn.rotation) as GameObject;
+			// Set start scene false in ui
+			TheUI.instance.startScript.inMainMenu = false;
 			break;	
+		case 2:
+			// In game screen
+			GameManager.instance.hideMouse ();
+			break;
 		}
 	}
 }
