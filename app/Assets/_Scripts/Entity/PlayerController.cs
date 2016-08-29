@@ -85,9 +85,13 @@ public class PlayerController : MonoBehaviour {
 
 	private void activateGravity() {
 		rigBody.useGravity = true;
+		Camera.main.GetComponent<LayersHelper> ().Toggle ("invisible_gravity");
+		gameObject.GetComponentInChildren<CapsuleCollider> ().radius = 0.64f;
 	}
 
 	private void deActivateGravity() {
 		rigBody.useGravity = false;
+		Camera.main.GetComponent<LayersHelper> ().Toggle ("invisible_gravity");
+		gameObject.GetComponentInChildren<CapsuleCollider> ().radius = 0.24f;
 	}
 }
