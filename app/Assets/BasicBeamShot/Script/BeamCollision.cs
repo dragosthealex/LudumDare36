@@ -49,6 +49,10 @@ public class BeamCollision : MonoBehaviour {
 				obj.GetComponent<BeamParam>().SetBeamParam(BP);
 				obj.transform.localScale = this.transform.localScale;
 
+				Rigidbody hitRBody = hitobj.GetComponent<Rigidbody> ();
+				if (hitRBody) {
+					hitRBody.AddExplosionForce (40f, hit.point, 10f, 0f, ForceMode.Impulse);
+				}
 			}
 		}
 		/*
