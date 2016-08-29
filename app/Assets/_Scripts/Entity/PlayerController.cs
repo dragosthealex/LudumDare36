@@ -5,6 +5,7 @@ using System.Collections;
 public class PlayerController : MonoBehaviour {
 
 	public float launchForce;
+	public float walkSpeed;
 	public float fireRate;
 	public GameObject gunPrefab;
 
@@ -20,6 +21,7 @@ public class PlayerController : MonoBehaviour {
 		noGravityScript = GetComponent<NoGravityPhysicsStuff> ();
 		gun = gunPrefab.GetComponent<LaserGun> ();
 		animController = GetComponent<AnimController> ();
+		rigBody = GetComponent<Rigidbody> ();
 	}
 
 	void Update () {
@@ -28,7 +30,9 @@ public class PlayerController : MonoBehaviour {
 		}
 
 		// Move
-		if (player.isGrabbed && Input.GetKeyDown (KeyCode.W)) {
+		if (rigBody.useGravity) {
+			MoveWithGravity ();
+		} else if (player.isGrabbed && Input.GetKeyDown (KeyCode.W)) {
 			noGravityScript.Launch (Camera.main.transform.forward * launchForce);
 			player.isGrabbed = false;
 		}
@@ -46,6 +50,10 @@ public class PlayerController : MonoBehaviour {
 		}
 	}
 
+	private void MoveWithGravity() {
+		transform.Translate (0, 0, Input.GetAxis ("Vertical") * walkSpeed);
+	}
+
 	IEnumerator Fire() {
 		while (Input.GetKey (KeyCode.Mouse0) && Input.GetKey(KeyCode.Mouse1)) {
 			animController.SetShoot ();
@@ -55,16 +63,31 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	void OnTriggerEnter (Collider col) {
-		if (col.gameObject.tag == "launchygrabby") {
+		string objTag = col.gameObject.tag;
+
+		if (objTag == "launchygrabby") {
 			player.isGrabbed = true;
 			noGravityScript.Stop ();
+		} else if (objTag == "gravity_area") {
+			activateGravity ();
 		}
 	}
 
 	void OnTriggerExit (Collider col) {
-		if (col.gameObject.tag == "launchygrabby") {
+		string objTag = col.gameObject.tag;
+
+		if (objTag == "launchygrabby") {
 			player.isGrabbed = false;
+		} else if (objTag == "gravity_area") {
+			deActivateGravity ();
 		}
 	}
 
+	private void activateGravity() {
+		rigBody.useGravity = true;
+	}
+
+	private void deActivateGravity() {
+		rigBody.useGravity = false;
+	}
 }
