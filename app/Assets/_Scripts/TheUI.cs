@@ -7,6 +7,7 @@ public class TheUI : MonoBehaviour {
 
 	public ShowPanels panelsScript;
 	public StartOptions startScript;
+	public ShowText showTextScript;
 
 	void Awake () {
 		if (instance == null) {
@@ -19,5 +20,6 @@ public class TheUI : MonoBehaviour {
 
 		panelsScript = GetComponent<ShowPanels> ();
 		startScript = GetComponent<StartOptions> ();
+		showTextScript = GetComponent<ShowText> ();
 	}
 }

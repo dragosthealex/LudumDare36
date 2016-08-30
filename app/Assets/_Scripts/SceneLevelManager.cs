@@ -20,9 +20,11 @@ public class SceneLevelManager : MonoBehaviour {
 		case 1:
 			// Training room
 			// Setup player
-			GameManager.instance.hideMouse ();
-			GameManager.instance.SP_spawn = GameObject.FindGameObjectWithTag ("Respawn").transform;
-			GameManager.instance.player = Instantiate (gameManager.playerPF, gameManager.SP_spawn.position, gameManager.SP_spawn.rotation) as GameObject;
+			gameManager.hideMouse ();
+			gameManager.SP_spawn = GameObject.FindGameObjectWithTag ("Respawn").transform;
+			gameManager.player = Instantiate (gameManager.playerPF, gameManager.SP_spawn.position, gameManager.SP_spawn.rotation) as GameObject;
+			gameManager.player.GetComponent<PlayerController> ().activateGravity ();
+			gameManager.player.GetComponent<PlayerController> ().movementEnabled = true;
 			// Set start scene false in ui
 			TheUI.instance.startScript.inMainMenu = false;
 			TheUI.instance.panelsScript.HideMenu ();

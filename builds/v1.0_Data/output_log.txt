@@ -2,6 +2,7 @@ Initialize engine version: 5.4.0f3 (a6d8d714de6f)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
+<<<<<<< HEAD
     Renderer: NVIDIA GeForce 840M (ID=0x1341)
     Vendor:   NVIDIA
     VRAM:     1991 MB
@@ -21,6 +22,27 @@ Loading E:\git_repo_ludum36\builds\v1.0_Data\Managed\UnityEngine.Networking.dll 
 - Completed reload, in  0.041 seconds
 Platform assembly: E:\git_repo_ludum36\builds\v1.0_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: E:\git_repo_ludum36\builds\v1.0_Data\Managed\System.dll (this message is harmless)
+=======
+    Renderer: NVIDIA GeForce GTX 950M           (ID=0x139a)
+    Vendor:   NVIDIA
+    VRAM:     4036 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: E:\Projects\LudumDare36\builds\v1.0_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading E:\Projects\LudumDare36\builds\v1.0_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: E:\Projects\LudumDare36\builds\v1.0_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading E:\Projects\LudumDare36\builds\v1.0_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: E:\Projects\LudumDare36\builds\v1.0_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading E:\Projects\LudumDare36\builds\v1.0_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: E:\Projects\LudumDare36\builds\v1.0_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading E:\Projects\LudumDare36\builds\v1.0_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: E:\Projects\LudumDare36\builds\v1.0_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading E:\Projects\LudumDare36\builds\v1.0_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: E:\Projects\LudumDare36\builds\v1.0_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading E:\Projects\LudumDare36\builds\v1.0_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.040 seconds
+Platform assembly: E:\Projects\LudumDare36\builds\v1.0_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: E:\Projects\LudumDare36\builds\v1.0_Data\Managed\System.dll (this message is harmless)
+>>>>>>> cb8ce2c17bda82317bb01e8cf8d8eee4296d04b4
 OnLevelWasLoaded was found on StartOptions
 This message has been deprecated and will be removed in a later version of Unity.
 Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
@@ -37,19 +59,33 @@ desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
+<<<<<<< HEAD
 UnloadTime: 0.814845 ms
 Setting up 2 worker threads for Enlighten.
   Thread -> id: 1b8c -> priority: 1 
   Thread -> id: 1eb0 -> priority: 1 
+=======
+UnloadTime: 0.777276 ms
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 2e54 -> priority: 1 
+  Thread -> id: 34a4 -> priority: 1 
+>>>>>>> cb8ce2c17bda82317bb01e8cf8d8eee4296d04b4
 kek
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+<<<<<<< HEAD
 UnloadTime: 1.582389 ms
 
 Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1914.
 Total: 0.716225 ms (FindLiveObjects: 0.131642 ms CreateObjectMapping: 0.041500 ms MarkObjects: 0.535049 ms  DeleteObjects: 0.007139 ms)
+=======
+UnloadTime: 1.561264 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1914.
+Total: 0.583845 ms (FindLiveObjects: 0.065924 ms CreateObjectMapping: 0.037501 ms MarkObjects: 0.474103 ms  DeleteObjects: 0.006316 ms)
+>>>>>>> cb8ce2c17bda82317bb01e8cf8d8eee4296d04b4
 
 shooting True
  
@@ -58,6 +94,433 @@ shooting True
 shooting False
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+<<<<<<< HEAD
+=======
+
+shooting True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.726353 ms
+
+Unloading 36 unused Assets to reduce memory usage. Loaded Objects now: 972.
+Total: 0.639111 ms (FindLiveObjects: 0.053292 ms CreateObjectMapping: 0.017369 ms MarkObjects: 0.435417 ms  DeleteObjects: 0.132638 ms)
+
+kek
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.298041 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 1915.
+Total: 0.678982 ms (FindLiveObjects: 0.093557 ms CreateObjectMapping: 0.028422 ms MarkObjects: 0.549896 ms  DeleteObjects: 0.006710 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.646217 ms
+
+Unloading 36 unused Assets to reduce memory usage. Loaded Objects now: 972.
+Total: 0.603188 ms (FindLiveObjects: 0.051713 ms CreateObjectMapping: 0.016974 ms MarkObjects: 0.388046 ms  DeleteObjects: 0.146454 ms)
+
+kek
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.277119 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 1915.
+Total: 0.658454 ms (FindLiveObjects: 0.099873 ms CreateObjectMapping: 0.027238 ms MarkObjects: 0.522658 ms  DeleteObjects: 0.008289 ms)
+
+shooting True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.675034 ms
+
+Unloading 36 unused Assets to reduce memory usage. Loaded Objects now: 972.
+Total: 0.559765 ms (FindLiveObjects: 0.025264 ms CreateObjectMapping: 0.016974 ms MarkObjects: 0.372650 ms  DeleteObjects: 0.144481 ms)
+
+kek
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.262513 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 1915.
+Total: 0.596478 ms (FindLiveObjects: 0.082899 ms CreateObjectMapping: 0.040265 ms MarkObjects: 0.466208 ms  DeleteObjects: 0.006710 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.671087 ms
+
+Unloading 36 unused Assets to reduce memory usage. Loaded Objects now: 972.
+Total: 0.638322 ms (FindLiveObjects: 0.044212 ms CreateObjectMapping: 0.017764 ms MarkObjects: 0.455549 ms  DeleteObjects: 0.120795 ms)
+
+kek
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.279093 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 1915.
+Total: 0.573582 ms (FindLiveObjects: 0.064740 ms CreateObjectMapping: 0.028027 ms MarkObjects: 0.475287 ms  DeleteObjects: 0.005526 ms)
+
+shooting True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.692798 ms
+
+Unloading 36 unused Assets to reduce memory usage. Loaded Objects now: 972.
+Total: 0.570424 ms (FindLiveObjects: 0.043028 ms CreateObjectMapping: 0.017369 ms MarkObjects: 0.370676 ms  DeleteObjects: 0.138954 ms)
+
+kek
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.290936 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 1915.
+Total: 0.523053 ms (FindLiveObjects: 0.049739 ms CreateObjectMapping: 0.028422 ms MarkObjects: 0.439364 ms  DeleteObjects: 0.005131 ms)
+
+shooting True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.685298 ms
+
+Unloading 36 unused Assets to reduce memory usage. Loaded Objects now: 972.
+Total: 0.662797 ms (FindLiveObjects: 0.067503 ms CreateObjectMapping: 0.016974 ms MarkObjects: 0.434232 ms  DeleteObjects: 0.143691 ms)
+
+kek
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.233696 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 1915.
+Total: 0.559765 ms (FindLiveObjects: 0.063555 ms CreateObjectMapping: 0.027238 ms MarkObjects: 0.462260 ms  DeleteObjects: 0.006316 ms)
+
+shooting True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.664376 ms
+
+Unloading 36 unused Assets to reduce memory usage. Loaded Objects now: 972.
+Total: 0.729511 ms (FindLiveObjects: 0.065134 ms CreateObjectMapping: 0.019737 ms MarkObjects: 0.517526 ms  DeleteObjects: 0.126717 ms)
+
+kek
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.268829 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 1915.
+Total: 0.565686 ms (FindLiveObjects: 0.054871 ms CreateObjectMapping: 0.028422 ms MarkObjects: 0.476077 ms  DeleteObjects: 0.005921 ms)
+
+shooting True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.706615 ms
+
+Unloading 36 unused Assets to reduce memory usage. Loaded Objects now: 972.
+Total: 0.639901 ms (FindLiveObjects: 0.037501 ms CreateObjectMapping: 0.017764 ms MarkObjects: 0.455549 ms  DeleteObjects: 0.129085 ms)
+
+kek
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.279488 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 1915.
+Total: 0.692009 ms (FindLiveObjects: 0.097899 ms CreateObjectMapping: 0.027633 ms MarkObjects: 0.558976 ms  DeleteObjects: 0.007105 ms)
+>>>>>>> cb8ce2c17bda82317bb01e8cf8d8eee4296d04b4
 
 shooting True
  

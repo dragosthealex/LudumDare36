@@ -1,16 +1,42 @@
 fileFormatVersion: 2
-guid: 47ec6275caf619d40a3291d96cf637ac
-timeCreated: 1472330400
+guid: c1c691b3e79b92448a0150e21062ebee
+timeCreated: 1472508013
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Icosphere
-    6400000: //RootNode
+    100000: Arena_Sphere_Icosphere_Sphere_mat
+    100002: //RootNode
+    100004: Crystal_Cylinder_Crystal_Mat
+    100006: Mayan_Pedestal_Plane_Pedesta;_Mat
+    100008: Tunnel_Icosphere.002_Tunnel_Mat
+    100010: mayan_pedestal_ramps_Plane.001_Pedesta;_Mat
+    400000: Arena_Sphere_Icosphere_Sphere_mat
+    400002: //RootNode
+    400004: Crystal_Cylinder_Crystal_Mat
+    400006: Mayan_Pedestal_Plane_Pedesta;_Mat
+    400008: Tunnel_Icosphere.002_Tunnel_Mat
+    400010: mayan_pedestal_ramps_Plane.001_Pedesta;_Mat
+    2300000: Arena_Sphere_Icosphere_Sphere_mat
+    2300002: Crystal_Cylinder_Crystal_Mat
+    2300004: Mayan_Pedestal_Plane_Pedesta;_Mat
+    2300006: Tunnel_Icosphere.002_Tunnel_Mat
+    2300008: mayan_pedestal_ramps_Plane.001_Pedesta;_Mat
+    3300000: Arena_Sphere_Icosphere_Sphere_mat
+    3300002: Crystal_Cylinder_Crystal_Mat
+    3300004: Mayan_Pedestal_Plane_Pedesta;_Mat
+    3300006: Tunnel_Icosphere.002_Tunnel_Mat
+    3300008: mayan_pedestal_ramps_Plane.001_Pedesta;_Mat
+    4300000: Arena_Sphere_Icosphere_Sphere_mat
+    4300002: Crystal_Cylinder_Crystal_Mat
+    4300004: Mayan_Pedestal_Plane_Pedesta;_Mat
+    4300006: Tunnel_Icosphere.002_Tunnel_Mat
+    4300008: mayan_pedestal_ramps_Plane.001_Pedesta;_Mat
+    6400000: Arena_Sphere_Icosphere_Sphere_mat
+    6400002: Crystal_Cylinder_Crystal_Mat
+    6400004: Mayan_Pedestal_Plane_Pedesta;_Mat
+    6400006: Tunnel_Icosphere.002_Tunnel_Mat
+    6400008: mayan_pedestal_ramps_Plane.001_Pedesta;_Mat
   materials:
     importMaterials: 1
     materialName: 0
@@ -35,7 +61,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 50
     meshCompression: 0
     addColliders: 1
     importBlendShapes: 1
@@ -53,7 +79,7 @@ ModelImporter:
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
-    tangentImportMode: 0
+    tangentImportMode: 3
   importAnimation: 1
   copyAvatar: 0
   humanDescription:

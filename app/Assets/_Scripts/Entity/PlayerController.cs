@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour {
 	private NoGravityPhysicsStuff noGravityScript; // Script that deals with 0 g movemnet
 	private LaserGun gun; // The hand
 	private AnimController animController; // The animation controller
+	public bool movementEnabled;
 	public bool canGrab; // True if in a trigger that allows grabbing
 
 	// Use this for initialization
@@ -32,11 +33,13 @@ public class PlayerController : MonoBehaviour {
 		}
 
 		// Move
-		if (rigBody.useGravity) {
-			MoveWithGravity ();
-		} else if (player.isGrabbed && Input.GetKeyDown (KeyCode.W)) {
-			grabbyStuffUngrab ();
+		if (movementEnabled) {
+			if (rigBody.useGravity) {
+				MoveWithGravity ();
+			} else if (player.isGrabbed && Input.GetKeyDown (KeyCode.W)) {
+				grabbyStuffUngrab ();
 
+			}
 		}
 
 		// Start shooting
@@ -96,7 +99,18 @@ public class PlayerController : MonoBehaviour {
 			canGrab = true;
 			player.canGrabTo = col.gameObject;
 		} else if (objTag == "gravity_area") {
-			activateGravity ();
+			TheUI.instance.showTextScript.DisplayText ("After falling through a pothole, you find yourself in the main" +
+				" room of some kind of an ancient temple. You notice a weak pulsating light coming from a crystal in the" +
+				" middle of the room. You can move with W and S, using the mouse for orientation.", 15f, col.gameObject);
+		} else if (objTag == "tunnel_exit") {
+			TheUI.instance.showTextScript.DisplayText ("You feel a strange attraction towards the crystal. " +
+				"You also notice you are feeling lighter and lighter as you get closer...", 10f, col.gameObject);
+		} else if (objTag == "near_crystal") {
+			TheUI.instance.showTextScript.DisplayText ("The crystal seems to give you power while it activates." +
+			" You feel the the gravity loses its force, and you want to try your new powers aiming with Left Mouse Button" +
+			"and shooting with the right. If you get your focus hard, you can aim to different surfaces and push yourself using " +
+			"W. When you are close to a grabbable surface, press space to grab.", 15f, col.gameObject);
+			activateCrystal ();
 		}
 	}
 
@@ -125,7 +139,9 @@ public class PlayerController : MonoBehaviour {
 		// Disable collider and make kinematic
 		//animController.animatedModel.GetComponent<CapsuleCollider>().enabled = false;
 		//rigBody.isKinematic = true;
-		player.grabbedTo.GetComponentInParent<Rigidbody> ().isKinematic = true;
+		if (player.grabbedTo.GetComponentInParent<Rigidbody> ()) {
+			player.grabbedTo.GetComponentInParent<Rigidbody> ().isKinematic = true;
+		}
 		// Save offset between this and the grabbedTo
 		// player.grabbedOffset = player.grabbedTo.transform.position - transform.position;
 		// player.grabbedDistance = Vector3.Distance (player.grabbedTo.transform.position, transform.position);
@@ -147,15 +163,33 @@ public class PlayerController : MonoBehaviour {
 		noGravityScript.Launch (Camera.main.transform.forward * launchForce);
 	}
 
-	private void activateGravity() {
+	public void activateGravity() {
 		rigBody.useGravity = true;
 		Camera.main.GetComponent<LayersHelper> ().Toggle ("invisible_gravity");
 		gameObject.GetComponentInChildren<CapsuleCollider> ().radius = 0.64f;
 	}
 
-	private void deActivateGravity() {
+	public void deActivateGravity() {
 		rigBody.useGravity = false;
 		Camera.main.GetComponent<LayersHelper> ().Toggle ("invisible_gravity");
 		gameObject.GetComponentInChildren<CapsuleCollider> ().radius = 0.24f;
+	}
+
+	private void activateCrystal() {
+		deActivateGravity ();
+		movementEnabled = false;
+		StartCoroutine ("activateCrystalCoroutine");
+	}
+
+	IEnumerator activateCrystalCoroutine() {
+		float time = 0f;
+		// Put the player up
+		while (time < 5f) {
+			time += Time.deltaTime;
+			transform.Translate (Vector3.up * Time.deltaTime * 2f, Space.World);
+			yield return null;
+		}
+		// Enable movement
+		movementEnabled = true;
 	}
 }
