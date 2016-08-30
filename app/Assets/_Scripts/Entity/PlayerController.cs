@@ -110,8 +110,8 @@ public class PlayerController : MonoBehaviour {
 				"You also notice you are feeling lighter and lighter as you get closer...", 10f, col.gameObject);
 		} else if (objTag == "near_crystal") {
 			TheUI.instance.showTextScript.DisplayText ("The crystal seems to give you power while it activates." +
-			" You feel the the gravity loses its force, and you want to try your new powers aiming with Left Mouse Button" +
-			"and shooting with the right. If you get your focus hard, you can aim to different surfaces and push yourself using " +
+			" You feel the the gravity loses its force.Try your new powers aiming with Left Mouse Button" +
+			" and shooting with the right. You can aim to different surfaces and push yourself using " +
 			"W. When you are close to a grabbable surface, press space to grab.", 15f, col.gameObject);
 			activateCrystal ();
 		}
