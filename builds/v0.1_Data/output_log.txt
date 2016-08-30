@@ -1,0 +1,61 @@
+Initialize engine version: 5.4.0f3 (a6d8d714de6f)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce 840M (ID=0x1341)
+    Vendor:   NVIDIA
+    VRAM:     1991 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: E:\git_repo_ludum36\builds\v0.1_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading E:\git_repo_ludum36\builds\v0.1_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: E:\git_repo_ludum36\builds\v0.1_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading E:\git_repo_ludum36\builds\v0.1_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: E:\git_repo_ludum36\builds\v0.1_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading E:\git_repo_ludum36\builds\v0.1_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: E:\git_repo_ludum36\builds\v0.1_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading E:\git_repo_ludum36\builds\v0.1_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: E:\git_repo_ludum36\builds\v0.1_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading E:\git_repo_ludum36\builds\v0.1_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: E:\git_repo_ludum36\builds\v0.1_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading E:\git_repo_ludum36\builds\v0.1_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.041 seconds
+Platform assembly: E:\git_repo_ludum36\builds\v0.1_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: E:\git_repo_ludum36\builds\v0.1_Data\Managed\System.dll (this message is harmless)
+OnLevelWasLoaded was found on StartOptions
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+ 
+(Filename:  Line: 375)
+
+OnLevelWasLoaded was found on EventSystemChecker
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+ 
+(Filename:  Line: 375)
+
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.038415 ms
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 2094 -> priority: 1 
+  Thread -> id: 230c -> priority: 1 
+kek
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.503849 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1947.
+Total: 0.723365 ms (FindLiveObjects: 0.127180 ms CreateObjectMapping: 0.041500 ms MarkObjects: 0.545312 ms  DeleteObjects: 0.008478 ms)
+
+shooting True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+shooting False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
