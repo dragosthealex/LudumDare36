@@ -29,7 +29,10 @@ public class PlayerController : MonoBehaviour {
 
 	void Update () {
 		if (GameManager.instance.isPaused) {
+			player.GetComponent<MouseLook> ().enabled = false;
 			return;
+		} else {
+			player.GetComponent<MouseLook> ().enabled = true;
 		}
 
 		// Move
@@ -183,13 +186,18 @@ public class PlayerController : MonoBehaviour {
 
 	IEnumerator activateCrystalCoroutine() {
 		float time = 0f;
+		GameObject crystal = GameObject.FindGameObjectWithTag ("theCrystal");
+		crystal.GetComponent<Crystal> ().activate();
 		// Put the player up
+		// Also put the crystal up
 		while (time < 5f) {
 			time += Time.deltaTime;
 			transform.Translate (Vector3.up * Time.deltaTime * 2f, Space.World);
+			crystal.transform.Translate (Vector3.up * Time.deltaTime * 1f, Space.World);
 			yield return null;
 		}
 		// Enable movement
 		movementEnabled = true;
+		// Activate crystal
 	}
 }
