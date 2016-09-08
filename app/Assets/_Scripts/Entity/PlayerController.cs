@@ -98,6 +98,7 @@ public class PlayerController : MonoBehaviour {
 	void OnTriggerEnter (Collider col) {
 		string objTag = col.gameObject.tag;
 
+		// TODO: replace collider grabby with raycast grabby
 		if (objTag == "launchygrabby") {
 			canGrab = true;
 			player.canGrabTo = col.gameObject;
