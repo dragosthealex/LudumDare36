@@ -20,6 +20,8 @@ public class MouseLook : MonoBehaviour {
 
 	private float rotY = 0.0f; // rotation around the up/y axis
 	private float rotX = 0.0f; // rotation around the right/x axis
+	private float rotZ = 0.0f;
+
 	private float oldrotX = 0.0f;
 	private float mouseX;
 	private float mouseY;
@@ -36,7 +38,7 @@ public class MouseLook : MonoBehaviour {
 			GetComponent<Rigidbody>().freezeRotation = true;
 	}
 
-	void Update () {
+	void LateUpdate () {
 		mouseX = Input.GetAxis("Mouse X");
 		mouseY = -Input.GetAxis("Mouse Y");
 
@@ -63,6 +65,15 @@ public class MouseLook : MonoBehaviour {
 
 		oldrotX = rotX;
 
-		transform.Rotate(new Vector3(rotX, rotY, 0.0f), Space.Self);
+
+		if (Input.GetKey (KeyCode.Q)) {
+			rotZ = GameManager.instance.walkSpeed * Time.deltaTime * 100;			
+		} else if (Input.GetKey (KeyCode.E)) {
+			rotZ = -GameManager.instance.walkSpeed * Time.deltaTime * 100;
+		} else {
+			rotZ = 0;
+		}
+
+		transform.Rotate(new Vector3(rotX, rotY, rotZ), Space.Self);
 	}
 }

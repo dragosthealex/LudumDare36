@@ -25,7 +25,8 @@ public class PlayerController : MonoBehaviour {
 		gun = gunPrefab.GetComponent<LaserGun> ();
 		animController = GetComponent<AnimController> ();
 		rigBody = GetComponent<Rigidbody> ();
-		canGrab = false;	
+		canGrab = false;
+		walkSpeed = GameManager.instance.walkSpeed;
 	}
 
 	void Update () {

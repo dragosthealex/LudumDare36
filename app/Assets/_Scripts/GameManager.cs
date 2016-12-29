@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour {
 
 	public bool isPaused = false; // Whether game is paused
 	public bool dev = false; // Whether we are in developing mode or not
+	public float walkSpeed = 0.5f;
 
 	public GameObject playerPF;
 	public GameObject player;
