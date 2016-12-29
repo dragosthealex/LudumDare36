@@ -101,7 +101,7 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	private void MoveWithKeys() {
-		transform.Translate (0, 0, Input.GetAxis ("Vertical") * walkSpeed);
+		transform.Translate (0, 0, Input.GetAxis ("Vertical")*Time.deltaTime * walkSpeed);
 	}
 
 	IEnumerator Fire() {
