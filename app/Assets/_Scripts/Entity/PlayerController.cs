@@ -121,7 +121,7 @@ public class PlayerController : MonoBehaviour {
 			canGrab = true;
 			player.canGrabTo = col.gameObject;
 			// Show the "Can grab" to the player
-			TheUI.instance.panelsScript.ShowGrabInfo (true);
+			TheUI.instance.panelsScript.ShowGrabInfo (true, "Can grab");
 		} else if (objTag == "gravity_area") {
 			TheUI.instance.showTextScript.DisplayText ("After falling through a pothole, you find yourself in the main" +
 				" room of some kind of an ancient temple. You notice a weak pulsating light coming from a crystal in the" +
@@ -143,7 +143,7 @@ public class PlayerController : MonoBehaviour {
 
 		if (objTag == "launchygrabby") {
 			// Hide the "Can grab" indication
-			TheUI.instance.panelsScript.ShowGrabInfo (false);
+			TheUI.instance.panelsScript.ShowGrabInfo (false, "");
 			canGrab = false;
 			player.canGrabTo = null;
 			player.grabbedTo = null;
@@ -161,6 +161,9 @@ public class PlayerController : MonoBehaviour {
 		player.grabbedTo = player.canGrabTo;
 		player.canGrabTo = null;
 		canGrab = false;
+
+		// Show that we grabbed
+		TheUI.instance.panelsScript.ShowGrabInfo (true, "Grabbed");
 
 		// Disable collider and make kinematic
 		//animController.animatedModel.GetComponent<CapsuleCollider>().enabled = false;
@@ -181,6 +184,10 @@ public class PlayerController : MonoBehaviour {
 		player.isGrabbed = false;
 		player.canGrabTo = null; // Should be already null
 		player.grabbedTo = null;
+
+		// We ungrabbed
+		// Show that we grabbed
+		TheUI.instance.panelsScript.ShowGrabInfo (false, "");
 
 		// Enable collider and remove kinematic
 		animController.animatedModel.GetComponent<CapsuleCollider>().enabled = true;

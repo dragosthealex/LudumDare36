@@ -18,8 +18,9 @@ public class ShowPanels : MonoBehaviour {
 		grabInfo.gameObject.SetActive(false);
 	}
 
-	public void ShowGrabInfo(bool show) {
+	public void ShowGrabInfo(bool show, string text) {
 		grabInfo.gameObject.SetActive(show);
+		grabInfo.text = text;
 	}
 
 	//Call this function to activate and display the Options panel during the main menu

@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: c1c691b3e79b92448a0150e21062ebee
-timeCreated: 1472508013
+timeCreated: 1483000667
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -9,34 +9,29 @@ ModelImporter:
     100002: //RootNode
     100004: Crystal_Cylinder_Crystal_Mat
     100006: Mayan_Pedestal_Plane_Pedesta;_Mat
-    100008: Tunnel_Icosphere.002_Tunnel_Mat
-    100010: mayan_pedestal_ramps_Plane.001_Pedesta;_Mat
+    100008: mayan_pedestal_ramps_Plane.001_Pedesta;_Mat
+    100010: Tunnel_Icosphere.002_Tunnel_Mat
     400000: Arena_Sphere_Icosphere_Sphere_mat
     400002: //RootNode
     400004: Crystal_Cylinder_Crystal_Mat
     400006: Mayan_Pedestal_Plane_Pedesta;_Mat
-    400008: Tunnel_Icosphere.002_Tunnel_Mat
-    400010: mayan_pedestal_ramps_Plane.001_Pedesta;_Mat
+    400008: mayan_pedestal_ramps_Plane.001_Pedesta;_Mat
+    400010: Tunnel_Icosphere.002_Tunnel_Mat
     2300000: Arena_Sphere_Icosphere_Sphere_mat
     2300002: Crystal_Cylinder_Crystal_Mat
     2300004: Mayan_Pedestal_Plane_Pedesta;_Mat
-    2300006: Tunnel_Icosphere.002_Tunnel_Mat
-    2300008: mayan_pedestal_ramps_Plane.001_Pedesta;_Mat
+    2300006: mayan_pedestal_ramps_Plane.001_Pedesta;_Mat
+    2300008: Tunnel_Icosphere.002_Tunnel_Mat
     3300000: Arena_Sphere_Icosphere_Sphere_mat
     3300002: Crystal_Cylinder_Crystal_Mat
     3300004: Mayan_Pedestal_Plane_Pedesta;_Mat
-    3300006: Tunnel_Icosphere.002_Tunnel_Mat
-    3300008: mayan_pedestal_ramps_Plane.001_Pedesta;_Mat
+    3300006: mayan_pedestal_ramps_Plane.001_Pedesta;_Mat
+    3300008: Tunnel_Icosphere.002_Tunnel_Mat
     4300000: Arena_Sphere_Icosphere_Sphere_mat
     4300002: Crystal_Cylinder_Crystal_Mat
     4300004: Mayan_Pedestal_Plane_Pedesta;_Mat
-    4300006: Tunnel_Icosphere.002_Tunnel_Mat
-    4300008: mayan_pedestal_ramps_Plane.001_Pedesta;_Mat
-    6400000: Arena_Sphere_Icosphere_Sphere_mat
-    6400002: Crystal_Cylinder_Crystal_Mat
-    6400004: Mayan_Pedestal_Plane_Pedesta;_Mat
-    6400006: Tunnel_Icosphere.002_Tunnel_Mat
-    6400008: mayan_pedestal_ramps_Plane.001_Pedesta;_Mat
+    4300006: mayan_pedestal_ramps_Plane.001_Pedesta;_Mat
+    4300008: Tunnel_Icosphere.002_Tunnel_Mat
   materials:
     importMaterials: 1
     materialName: 0
@@ -63,8 +58,8 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 50
     meshCompression: 0
-    addColliders: 1
-    importBlendShapes: 1
+    addColliders: 0
+    importBlendShapes: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
@@ -83,6 +78,7 @@ ModelImporter:
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
+    serializedVersion: 2
     human: []
     skeleton: []
     armTwist: 0.5
@@ -93,7 +89,10 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 0
   humanoidOversampling: 1
