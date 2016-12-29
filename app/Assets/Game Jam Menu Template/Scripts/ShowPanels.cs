@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class ShowPanels : MonoBehaviour {
 
@@ -8,6 +9,18 @@ public class ShowPanels : MonoBehaviour {
 	public GameObject menuPanel;							//Store a reference to the Game Object MenuPanel 
 	public GameObject pausePanel;							//Store a reference to the Game Object PausePanel 
 	public GameObject textPanel;							//Store a reference to the Game Object TextPanel
+	public GameObject inGamePanel;
+
+	private Text grabInfo;
+
+	public void Start() {
+		grabInfo = inGamePanel.GetComponentInChildren<Text> ();
+		grabInfo.gameObject.SetActive(false);
+	}
+
+	public void ShowGrabInfo(bool show) {
+		grabInfo.gameObject.SetActive(show);
+	}
 
 	//Call this function to activate and display the Options panel during the main menu
 	public void ShowOptionsPanel()

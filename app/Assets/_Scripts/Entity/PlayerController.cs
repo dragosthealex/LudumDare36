@@ -121,7 +121,7 @@ public class PlayerController : MonoBehaviour {
 			canGrab = true;
 			player.canGrabTo = col.gameObject;
 			// Show the "Can grab" to the player
-			TheUI.instance.showTextScript.DisplayText ("Can Grab");
+			TheUI.instance.panelsScript.ShowGrabInfo (true);
 		} else if (objTag == "gravity_area") {
 			TheUI.instance.showTextScript.DisplayText ("After falling through a pothole, you find yourself in the main" +
 				" room of some kind of an ancient temple. You notice a weak pulsating light coming from a crystal in the" +
@@ -143,7 +143,7 @@ public class PlayerController : MonoBehaviour {
 
 		if (objTag == "launchygrabby") {
 			// Hide the "Can grab" indication
-			TheUI.instance.showTextScript.HideText();
+			TheUI.instance.panelsScript.ShowGrabInfo (false);
 			canGrab = false;
 			player.canGrabTo = null;
 			player.grabbedTo = null;
