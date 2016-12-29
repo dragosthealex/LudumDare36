@@ -16,48 +16,52 @@ using System.Collections;
 ///   -> Set the mouse look to use LookY. (You want the camera to tilt up and down like a head. The character already turns.)
 [AddComponentMenu("Camera-Control/Mouse Look")]
 public class MouseLook : MonoBehaviour {
+	public float mouseSensitivity = 200.0f;
 
-	public enum RotationAxes { MouseXAndY = 0, MouseX = 1, MouseY = 2 }
-	public RotationAxes axes = RotationAxes.MouseXAndY;
-	public float sensitivityX = 15F;
-	public float sensitivityY = 15F;
+	private float rotY = 0.0f; // rotation around the up/y axis
+	private float rotX = 0.0f; // rotation around the right/x axis
+	private float oldrotX = 0.0f;
+	private float mouseX;
+	private float mouseY;
+	// While is 1, it means we are in normal position. When we get upside down, it 
+	// changes to -1, to keep left and right the same.
+	private int upsideDownFlag = 1;
 
-	public float minimumX = -360F;
-	public float maximumX = 360F;
+	void Start () {
+		Vector3 rot = transform.localRotation.eulerAngles;
+		rotY = rot.y;
+		rotX = rot.x;
 
-	public float minimumY = -60F;
-	public float maximumY = 60F;
-
-	float rotationY = 0F;
-
-	void Update ()
-	{
-		if (axes == RotationAxes.MouseXAndY)
-		{
-			float rotationX = transform.localEulerAngles.y + Input.GetAxis("Mouse X") * sensitivityX;
-			
-			rotationY += Input.GetAxis("Mouse Y") * sensitivityY;
-			rotationY = Mathf.Clamp (rotationY, minimumY, maximumY);
-			
-			transform.localEulerAngles = new Vector3(-rotationY, rotationX, 0);
-		}
-		else if (axes == RotationAxes.MouseX)
-		{
-			transform.Rotate(0, Input.GetAxis("Mouse X") * sensitivityX, 0);
-		}
-		else
-		{
-			rotationY += Input.GetAxis("Mouse Y") * sensitivityY;
-			rotationY = Mathf.Clamp (rotationY, minimumY, maximumY);
-			
-			transform.localEulerAngles = new Vector3(-rotationY, transform.localEulerAngles.y, 0);
-		}
-	}
-	
-	void Start ()
-	{
-		// Make the rigid body not change rotation
 		if (GetComponent<Rigidbody>())
 			GetComponent<Rigidbody>().freezeRotation = true;
+	}
+
+	void Update () {
+		mouseX = Input.GetAxis("Mouse X");
+		mouseY = -Input.GetAxis("Mouse Y");
+
+		rotY += upsideDownFlag * mouseX * mouseSensitivity * Time.deltaTime;
+		rotX += mouseY * mouseSensitivity * Time.deltaTime;
+
+		if (rotY > 180) {
+			rotY = - 180 + rotY % 180;
+		} else if (rotY < -180) {
+			rotY = 360 + rotY;
+		}
+		if (rotX > 180) {
+			rotX = - 180 + rotX % 180;
+		} else if (rotX < -180) {
+			rotX = 360 + rotX;
+		}
+	
+		if (rotX >= -90 && rotX <= 90) {
+			upsideDownFlag = 1;
+		} else {
+			upsideDownFlag = -1;
+		}
+
+		oldrotX = rotX;
+
+		transform.rotation = Quaternion.Euler(rotX, rotY, 0.0f);;
 	}
 }
