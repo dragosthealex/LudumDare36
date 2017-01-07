@@ -15,7 +15,7 @@ public class SceneLevelManager : MonoBehaviour {
 			// Start game screen
 			// Set start scene in ui and show menu panel
 			TheUI.instance.startScript.inMainMenu = true;
-			TheUI.instance.panelsScript.ShowMenu ();
+			TheUI.instance.panelsScript.TogglePanel (PanelsManager.PanelNames.MENU, true);
 			break;
 		case 1:
 			// Training room
@@ -27,7 +27,7 @@ public class SceneLevelManager : MonoBehaviour {
 			gameManager.player.GetComponent<PlayerController> ().movementEnabled = true;
 			// Set start scene false in ui
 			TheUI.instance.startScript.inMainMenu = false;
-			TheUI.instance.panelsScript.HideMenu ();
+			TheUI.instance.panelsScript.TogglePanel (PanelsManager.PanelNames.MENU, false);
 			break;	
 		case 2:
 			// In game screen

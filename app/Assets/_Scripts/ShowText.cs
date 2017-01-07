@@ -4,48 +4,55 @@ using UnityEngine.UI;
 
 public class ShowText : MonoBehaviour {
 
-	public ShowPanels panelScript;
-	public Text theText;
+	public PanelsManager panelScript;
 	public float textTime;
+
+	private Text theText;
+	private bool isShowing = false;
+	private float counter = 0f;
+	private GameObject currentTrigger = null;
 
 	void Awake () {
 		panelScript = TheUI.instance.panelsScript;
-		theText = panelScript.textPanel.GetComponentInChildren<Text> ();
+		// The text gameobject where we write the text
+		theText = panelScript.panels [(int)PanelsManager.PanelNames.TEXT]
+			.gameObject.GetComponentInChildren<Text> ();
 	}
 
-	// Display a text with default time
-	public void DisplayText(string text) {
-		StopCoroutine ("ShowTheText");
-		StartCoroutine ("ShowTheText", new object[2]{text, textTime});
+	// Display a text with time
+	public void DisplayText(string text, int time = 5, GameObject trigger = null) {
+		// Check if we already show something or not
+		if (!isShowing) {
+			panelScript.TogglePanel (PanelsManager.PanelNames.TEXT, true);
+		} else if (currentTrigger) {
+			// If we had a trigger, destroy it after the text is changed
+			Destroy (currentTrigger);
+		}
+
+		// Change the text to new value
+		theText.text = text;
+		// Set the counter to time remaining
+		counter = (float) time;
+		// Set the trigger that 
 	}
 
-	// Display a text with a time
-	public void DisplayText(string text, float time) {
-		StopCoroutine ("ShowTheText");
-		StartCoroutine ("ShowTheText", new object[2]{text, time});
-	}
-
-	// Display a text with time and destroy the game object
-	public void DisplayText(string text, float time, GameObject obj) {
-		StopCoroutine ("ShowTheText");
-		StartCoroutine("ShowTheText", new object[2]{text, time});
-
-		Destroy (obj);
-	}
-
-	// TODO: Make more text displays
-	// Hide the text
+	// Hide the text, whatever it may be
 	public void HideText() {
-		StopCoroutine ("ShowTheText");
+		counter = 0;
 	}
 
-	IEnumerator ShowTheText(object[] parameters) {
-		panelScript.ShowTextPanel ();
-		theText.text = (string)parameters[0];
-
-		yield return new WaitForSeconds((float)parameters[1]);
-
-		theText.text = "";
-		panelScript.HideTextPanel ();
+	void Update() {
+		// If counter reached 0, hide the panel
+		if (counter <= 0) {
+			theText.text = "";
+			panelScript.TogglePanel (PanelsManager.PanelNames.TEXT, false);
+			// Destroy the trigger if it is set
+			if (currentTrigger) {
+				Destroy (currentTrigger);
+			}
+			return;
+		}
+		// Else substract every second
+		counter -= Time.deltaTime;
 	}
 }

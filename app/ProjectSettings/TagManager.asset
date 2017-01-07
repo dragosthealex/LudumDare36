@@ -15,6 +15,7 @@ TagManager:
   - editor_only
   - FirstPersonCamera
   - Fire
+  - tunnel_enter
   layers:
   - Default
   - TransparentFX

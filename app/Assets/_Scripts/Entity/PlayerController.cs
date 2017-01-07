@@ -122,18 +122,18 @@ public class PlayerController : MonoBehaviour {
 			player.canGrabTo = col.gameObject;
 			// Show the "Can grab" to the player
 			TheUI.instance.panelsScript.ShowGrabInfo (true, "Can grab");
-		} else if (objTag == "gravity_area") {
+		} else if (objTag == "tunnel_enter") {
 			TheUI.instance.showTextScript.DisplayText ("After falling through a pothole, you find yourself in the main" +
 				" room of some kind of an ancient temple. You notice a weak pulsating light coming from a crystal in the" +
-				" middle of the room. You can move with W and S, using the mouse for orientation.", 10f, col.gameObject);
+				" middle of the room. You can move with W and S, using the mouse for orientation.", 10, col.gameObject);
 		} else if (objTag == "tunnel_exit") {
 			TheUI.instance.showTextScript.DisplayText ("You feel a strange attraction towards the crystal. " +
-				"You also notice you are feeling lighter and lighter as you get closer...", 5f, col.gameObject);
+				"You also notice you are feeling lighter and lighter as you get closer...", 5, col.gameObject);
 		} else if (objTag == "near_crystal") {
 			TheUI.instance.showTextScript.DisplayText ("The crystal seems to give you power while it activates." +
 			" You feel the the gravity loses its force.Try your new powers aiming with Left Mouse Button" +
 			" and shooting with the right. You can aim to different surfaces and push yourself using " +
-			"W. When you are close to a grabbable surface, press space to grab.", 10f, col.gameObject);
+			"W. When you are close to a grabbable surface, press space to grab.", 10, col.gameObject);
 			activateCrystal ();
 		}
 	}
@@ -147,8 +147,6 @@ public class PlayerController : MonoBehaviour {
 			canGrab = false;
 			player.canGrabTo = null;
 			player.grabbedTo = null;
-		} else if (objTag == "gravity_area") {
-			deActivateGravity ();
 		}
 	}
 

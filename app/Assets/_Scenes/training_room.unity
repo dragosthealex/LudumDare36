@@ -3451,7 +3451,7 @@ GameObject:
   - component: {fileID: 546903374}
   m_Layer: 0
   m_Name: tunnel_enter
-  m_TagString: gravity_area
+  m_TagString: tunnel_enter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -5,7 +5,7 @@ public class TheUI : MonoBehaviour {
 
 	public static TheUI instance;
 
-	public ShowPanels panelsScript;
+	public PanelsManager panelsScript;
 	public StartOptions startScript;
 	public ShowText showTextScript;
 
@@ -18,7 +18,7 @@ public class TheUI : MonoBehaviour {
 
 		DontDestroyOnLoad (gameObject);
 
-		panelsScript = GetComponent<ShowPanels> ();
+		panelsScript = GetComponent<PanelsManager> ();
 		startScript = GetComponent<StartOptions> ();
 		showTextScript = GetComponent<ShowText> ();
 	}
