@@ -104,7 +104,7 @@ GameObject:
   - component: {fileID: 13394602}
   - component: {fileID: 13394601}
   - component: {fileID: 13394600}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: box (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -205,7 +205,7 @@ GameObject:
   - component: {fileID: 29559242}
   - component: {fileID: 29559244}
   - component: {fileID: 29559243}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Outside_Plane_None
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -278,7 +278,7 @@ GameObject:
   - component: {fileID: 32413661}
   - component: {fileID: 32413660}
   - component: {fileID: 32413659}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Icosphere_Icosphere_top_light_middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -366,7 +366,7 @@ GameObject:
   - component: {fileID: 60863902}
   - component: {fileID: 60863901}
   - component: {fileID: 60863900}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: EventSystem (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -444,7 +444,7 @@ GameObject:
   m_Component:
   - component: {fileID: 91216548}
   - component: {fileID: 91216549}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 4grabby2
   m_TagString: launchygrabby
   m_Icon: {fileID: 0}
@@ -495,7 +495,7 @@ GameObject:
   - component: {fileID: 120874087}
   - component: {fileID: 120874086}
   - component: {fileID: 120874085}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: box (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -594,7 +594,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 141444863}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: grabby_stuff2 (5)
   m_TagString: launchygrabby
   m_Icon: {fileID: 0}
@@ -627,7 +627,7 @@ GameObject:
   - component: {fileID: 153073138}
   - component: {fileID: 153073140}
   - component: {fileID: 153073139}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -701,7 +701,7 @@ GameObject:
   - component: {fileID: 159446812}
   - component: {fileID: 159446811}
   - component: {fileID: 159446810}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: box (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -804,7 +804,7 @@ GameObject:
   - component: {fileID: 163059466}
   - component: {fileID: 163059465}
   - component: {fileID: 163059464}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: box (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -907,7 +907,7 @@ GameObject:
   - component: {fileID: 171994910}
   - component: {fileID: 171994909}
   - component: {fileID: 171994908}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Mayan_Pedestal_Plane_Pedesta;_Mat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -992,7 +992,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 178754427}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1023,7 +1023,7 @@ GameObject:
   m_Component:
   - component: {fileID: 195029870}
   - component: {fileID: 195029871}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: grabby_stuff2 (2)
   m_TagString: launchygrabby
   m_Icon: {fileID: 0}
@@ -1069,7 +1069,7 @@ GameObject:
   - component: {fileID: 196696525}
   - component: {fileID: 196696527}
   - component: {fileID: 196696526}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1143,7 +1143,7 @@ GameObject:
   - component: {fileID: 202615242}
   - component: {fileID: 202615241}
   - component: {fileID: 202615240}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: box (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1243,7 +1243,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 215706345}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: grabby_stuff2 (6)
   m_TagString: launchygrabby
   m_Icon: {fileID: 0}
@@ -1276,7 +1276,7 @@ GameObject:
   m_Component:
   - component: {fileID: 232464056}
   - component: {fileID: 232464057}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: grabby_stuff2
   m_TagString: launchygrabby
   m_Icon: {fileID: 0}
@@ -1323,7 +1323,7 @@ GameObject:
   - component: {fileID: 246127633}
   - component: {fileID: 246127632}
   - component: {fileID: 246127631}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Icosphere.002_Icosphere.002_top_light_exterior
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1409,7 +1409,7 @@ GameObject:
   m_Component:
   - component: {fileID: 269267095}
   - component: {fileID: 269267096}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 4grabby2 (3)
   m_TagString: launchygrabby
   m_Icon: {fileID: 0}
@@ -1458,7 +1458,7 @@ GameObject:
   - component: {fileID: 271263206}
   - component: {fileID: 271263208}
   - component: {fileID: 271263207}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Outside_Plane_None
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1532,7 +1532,7 @@ GameObject:
   - component: {fileID: 271471344}
   - component: {fileID: 271471343}
   - component: {fileID: 271471342}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: box (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1634,7 +1634,7 @@ GameObject:
   - component: {fileID: 283891964}
   - component: {fileID: 283891966}
   - component: {fileID: 283891965}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1706,7 +1706,7 @@ GameObject:
   - component: {fileID: 314670290}
   - component: {fileID: 314670292}
   - component: {fileID: 314670291}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1777,7 +1777,7 @@ GameObject:
   m_Component:
   - component: {fileID: 326858199}
   - component: {fileID: 326858200}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: grabby_stuff2 (4)
   m_TagString: launchygrabby
   m_Icon: {fileID: 0}
@@ -1825,7 +1825,7 @@ GameObject:
   - component: {fileID: 329843939}
   - component: {fileID: 329843938}
   - component: {fileID: 329843937}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: box (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1929,7 +1929,7 @@ GameObject:
   - component: {fileID: 351451472}
   - component: {fileID: 351451471}
   - component: {fileID: 351451470}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: box (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2030,7 +2030,7 @@ GameObject:
   m_Component:
   - component: {fileID: 364672883}
   - component: {fileID: 364672884}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: grabby_stuff2 (1)
   m_TagString: launchygrabby
   m_Icon: {fileID: 0}
@@ -2074,7 +2074,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 365722328}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: grabby_stuff2 (8)
   m_TagString: launchygrabby
   m_Icon: {fileID: 0}
@@ -2108,7 +2108,7 @@ GameObject:
   - component: {fileID: 374787996}
   - component: {fileID: 374787998}
   - component: {fileID: 374787997}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Outside_Plane_None
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2182,7 +2182,7 @@ GameObject:
   - component: {fileID: 382912308}
   - component: {fileID: 382912307}
   - component: {fileID: 382912306}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: box (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2283,7 +2283,7 @@ GameObject:
   m_Component:
   - component: {fileID: 383113387}
   - component: {fileID: 383113388}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: grabby_stuff2 (5)
   m_TagString: launchygrabby
   m_Icon: {fileID: 0}
@@ -2328,7 +2328,7 @@ GameObject:
   m_Component:
   - component: {fileID: 399956906}
   - component: {fileID: 399956907}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: grabby_stuff2 (7)
   m_TagString: launchygrabby
   m_Icon: {fileID: 0}
@@ -2374,7 +2374,7 @@ GameObject:
   - component: {fileID: 408962719}
   - component: {fileID: 408962721}
   - component: {fileID: 408962720}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2445,7 +2445,7 @@ GameObject:
   m_Component:
   - component: {fileID: 409270006}
   - component: {fileID: 409270007}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: grabby_stuff2 (1)
   m_TagString: launchygrabby
   m_Icon: {fileID: 0}
@@ -2490,7 +2490,7 @@ GameObject:
   m_Component:
   - component: {fileID: 412421188}
   - component: {fileID: 412421189}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 4grabby2 (1)
   m_TagString: launchygrabby
   m_Icon: {fileID: 0}
@@ -2539,7 +2539,7 @@ GameObject:
   - component: {fileID: 417249831}
   - component: {fileID: 417249833}
   - component: {fileID: 417249832}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2613,7 +2613,7 @@ GameObject:
   - component: {fileID: 422543282}
   - component: {fileID: 422543281}
   - component: {fileID: 422543280}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: box (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2714,7 +2714,7 @@ GameObject:
   - component: {fileID: 430102682}
   - component: {fileID: 430102684}
   - component: {fileID: 430102683}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2785,7 +2785,7 @@ GameObject:
   m_Component:
   - component: {fileID: 432633819}
   - component: {fileID: 432633820}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: grabby_stuff2 (1)
   m_TagString: launchygrabby
   m_Icon: {fileID: 0}
@@ -2833,7 +2833,7 @@ GameObject:
   - component: {fileID: 438064115}
   - component: {fileID: 438064114}
   - component: {fileID: 438064113}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: box (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2934,7 +2934,7 @@ GameObject:
   m_Component:
   - component: {fileID: 442204505}
   - component: {fileID: 442204506}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: grabby_stuff2
   m_TagString: launchygrabby
   m_Icon: {fileID: 0}
@@ -2982,7 +2982,7 @@ GameObject:
   - component: {fileID: 460370365}
   - component: {fileID: 460370364}
   - component: {fileID: 460370363}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: box (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3084,7 +3084,7 @@ GameObject:
   - component: {fileID: 470864092}
   - component: {fileID: 470864094}
   - component: {fileID: 470864093}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Outside_Plane_None
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3155,7 +3155,7 @@ GameObject:
   m_Component:
   - component: {fileID: 477448547}
   - component: {fileID: 477448548}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: grabby_stuff2 (1)
   m_TagString: launchygrabby
   m_Icon: {fileID: 0}
@@ -3201,7 +3201,7 @@ GameObject:
   - component: {fileID: 489239245}
   - component: {fileID: 489239247}
   - component: {fileID: 489239246}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Inside_Plane.001_None
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3271,7 +3271,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 490268952}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3307,7 +3307,7 @@ GameObject:
   - component: {fileID: 498552743}
   - component: {fileID: 498552742}
   - component: {fileID: 498552741}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: box (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3407,7 +3407,7 @@ GameObject:
   m_Component:
   - component: {fileID: 514155149}
   - component: {fileID: 514155150}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GrabbyWall1Collider
   m_TagString: launchygrabby
   m_Icon: {fileID: 0}
@@ -3449,7 +3449,7 @@ GameObject:
   m_Component:
   - component: {fileID: 546903373}
   - component: {fileID: 546903374}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: tunnel_enter
   m_TagString: tunnel_enter
   m_Icon: {fileID: 0}
@@ -3493,7 +3493,7 @@ GameObject:
   m_Component:
   - component: {fileID: 547115205}
   - component: {fileID: 547115206}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: grabby_stuff2
   m_TagString: launchygrabby
   m_Icon: {fileID: 0}
@@ -3537,7 +3537,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 574313442}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: grabby_stuff2 (7)
   m_TagString: launchygrabby
   m_Icon: {fileID: 0}
@@ -3570,7 +3570,7 @@ GameObject:
   m_Component:
   - component: {fileID: 578866062}
   - component: {fileID: 578866063}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: grabby_stuff2
   m_TagString: launchygrabby
   m_Icon: {fileID: 0}
@@ -3617,7 +3617,7 @@ GameObject:
   - component: {fileID: 587581989}
   - component: {fileID: 587581988}
   - component: {fileID: 587581987}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: mayan_pedestal_ramps_Plane.001_Pedesta;_Mat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3702,7 +3702,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 629269707}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: grabby_stuff2 (6)
   m_TagString: launchygrabby
   m_Icon: {fileID: 0}
@@ -3738,7 +3738,7 @@ GameObject:
   - component: {fileID: 651185695}
   - component: {fileID: 651185694}
   - component: {fileID: 651185693}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: box (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3842,7 +3842,7 @@ GameObject:
   - component: {fileID: 655151064}
   - component: {fileID: 655151063}
   - component: {fileID: 655151062}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3943,7 +3943,7 @@ GameObject:
   - component: {fileID: 673435558}
   - component: {fileID: 673435560}
   - component: {fileID: 673435559}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4014,7 +4014,7 @@ GameObject:
   m_Component:
   - component: {fileID: 710571341}
   - component: {fileID: 710571342}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4081,7 +4081,7 @@ GameObject:
   - component: {fileID: 771460057}
   - component: {fileID: 771460059}
   - component: {fileID: 771460058}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4152,7 +4152,7 @@ GameObject:
   m_Component:
   - component: {fileID: 799837748}
   - component: {fileID: 799837749}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: grabby_stuff2 (1)
   m_TagString: launchygrabby
   m_Icon: {fileID: 0}
@@ -4200,7 +4200,7 @@ GameObject:
   - component: {fileID: 804214373}
   - component: {fileID: 804214372}
   - component: {fileID: 804214371}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: box (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4302,7 +4302,7 @@ GameObject:
   - component: {fileID: 816742538}
   - component: {fileID: 816742540}
   - component: {fileID: 816742539}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4374,7 +4374,7 @@ GameObject:
   - component: {fileID: 817578059}
   - component: {fileID: 817578061}
   - component: {fileID: 817578060}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4445,7 +4445,7 @@ GameObject:
   m_Component:
   - component: {fileID: 834753245}
   - component: {fileID: 834753246}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: grabby_stuff2 (2)
   m_TagString: launchygrabby
   m_Icon: {fileID: 0}
@@ -4493,7 +4493,7 @@ GameObject:
   - component: {fileID: 844457111}
   - component: {fileID: 844457110}
   - component: {fileID: 844457109}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: box (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4595,7 +4595,7 @@ GameObject:
   - component: {fileID: 862466634}
   - component: {fileID: 862466636}
   - component: {fileID: 862466635}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4669,7 +4669,7 @@ GameObject:
   - component: {fileID: 890851375}
   - component: {fileID: 890851374}
   - component: {fileID: 890851373}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: box (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4849,7 +4849,7 @@ GameObject:
   m_Component:
   - component: {fileID: 893053236}
   - component: {fileID: 893053237}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: grabby_stuff2
   m_TagString: launchygrabby
   m_Icon: {fileID: 0}
@@ -4897,7 +4897,7 @@ GameObject:
   - component: {fileID: 894296703}
   - component: {fileID: 894296702}
   - component: {fileID: 894296701}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: box (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4997,7 +4997,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 897338728}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: grabby_stuff2 (5)
   m_TagString: launchygrabby
   m_Icon: {fileID: 0}
@@ -5029,7 +5029,7 @@ GameObject:
   m_Component:
   - component: {fileID: 898238013}
   - component: {fileID: 898238014}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Point light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5096,7 +5096,7 @@ GameObject:
   - component: {fileID: 907398633}
   - component: {fileID: 907398635}
   - component: {fileID: 907398634}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5168,7 +5168,7 @@ GameObject:
   - component: {fileID: 918820229}
   - component: {fileID: 918820231}
   - component: {fileID: 918820230}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5239,7 +5239,7 @@ GameObject:
   m_Component:
   - component: {fileID: 918854536}
   - component: {fileID: 918854537}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: grabby_stuff2
   m_TagString: launchygrabby
   m_Icon: {fileID: 0}
@@ -5287,7 +5287,7 @@ GameObject:
   - component: {fileID: 951429780}
   - component: {fileID: 951429779}
   - component: {fileID: 951429778}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5390,7 +5390,7 @@ GameObject:
   - component: {fileID: 952189308}
   - component: {fileID: 952189307}
   - component: {fileID: 952189306}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: box (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5493,7 +5493,7 @@ GameObject:
   - component: {fileID: 953386610}
   - component: {fileID: 953386609}
   - component: {fileID: 953386608}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Crystal_Cylinder_Crystal_Mat
   m_TagString: theCrystal
   m_Icon: {fileID: 0}
@@ -5597,7 +5597,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 968308855}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5628,7 +5628,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 970595503}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5660,7 +5660,7 @@ GameObject:
   - component: {fileID: 980430850}
   - component: {fileID: 980430852}
   - component: {fileID: 980430851}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5730,7 +5730,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 986384527}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: grabby_stuff2 (6)
   m_TagString: launchygrabby
   m_Icon: {fileID: 0}
@@ -5762,7 +5762,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 987221777}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: square_light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5797,7 +5797,7 @@ GameObject:
   - component: {fileID: 987320138}
   - component: {fileID: 987320140}
   - component: {fileID: 987320139}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5867,7 +5867,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1008410347}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: grabby_stuff2 (5)
   m_TagString: launchygrabby
   m_Icon: {fileID: 0}
@@ -5900,7 +5900,7 @@ GameObject:
   - component: {fileID: 1022940438}
   - component: {fileID: 1022940440}
   - component: {fileID: 1022940439}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5974,7 +5974,7 @@ GameObject:
   - component: {fileID: 1033231938}
   - component: {fileID: 1033231937}
   - component: {fileID: 1033231936}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: box (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6078,7 +6078,7 @@ GameObject:
   - component: {fileID: 1037501353}
   - component: {fileID: 1037501352}
   - component: {fileID: 1037501351}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: box (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6177,7 +6177,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1056001608}
   - component: {fileID: 1056001609}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GrabbyWall2Collider
   m_TagString: launchygrabby
   m_Icon: {fileID: 0}
@@ -6220,7 +6220,7 @@ GameObject:
   - component: {fileID: 1057289449}
   - component: {fileID: 1057289451}
   - component: {fileID: 1057289450}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6291,7 +6291,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1060676984}
   - component: {fileID: 1060676985}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: grabby_stuff2
   m_TagString: launchygrabby
   m_Icon: {fileID: 0}
@@ -6337,7 +6337,7 @@ GameObject:
   - component: {fileID: 1064434266}
   - component: {fileID: 1064434268}
   - component: {fileID: 1064434267}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6407,7 +6407,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1074312342}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 9boxes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6448,7 +6448,7 @@ GameObject:
   - component: {fileID: 1082730586}
   - component: {fileID: 1082730588}
   - component: {fileID: 1082730587}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6519,7 +6519,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1088918245}
   - component: {fileID: 1088918246}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6584,7 +6584,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1090172959}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: grabby_stuff2 (8)
   m_TagString: launchygrabby
   m_Icon: {fileID: 0}
@@ -6620,7 +6620,7 @@ GameObject:
   - component: {fileID: 1099610238}
   - component: {fileID: 1099610237}
   - component: {fileID: 1099610236}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: box (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6722,7 +6722,7 @@ GameObject:
   - component: {fileID: 1100398404}
   - component: {fileID: 1100398406}
   - component: {fileID: 1100398405}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Inside_Plane.001_None
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6796,7 +6796,7 @@ GameObject:
   - component: {fileID: 1100854776}
   - component: {fileID: 1100854775}
   - component: {fileID: 1100854774}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: box (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6896,7 +6896,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1157950514}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: grabby_stuff2 (6)
   m_TagString: launchygrabby
   m_Icon: {fileID: 0}
@@ -6928,7 +6928,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1161556616}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: square_light (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6961,7 +6961,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1161911539}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6997,7 +6997,7 @@ GameObject:
   - component: {fileID: 1171616718}
   - component: {fileID: 1171616717}
   - component: {fileID: 1171616716}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: box (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7097,7 +7097,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1174437603}
   - component: {fileID: 1174437604}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GrabbyWall4Collider
   m_TagString: launchygrabby
   m_Icon: {fileID: 0}
@@ -7138,7 +7138,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1175044448}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 9boxes (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7177,7 +7177,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1175123845}
   - component: {fileID: 1175123846}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GrabbyWall6Collider
   m_TagString: launchygrabby
   m_Icon: {fileID: 0}
@@ -7222,7 +7222,7 @@ GameObject:
   - component: {fileID: 1179301914}
   - component: {fileID: 1179301913}
   - component: {fileID: 1179301912}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: box (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7321,7 +7321,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1190584045}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: grabby_stuff2 (7)
   m_TagString: launchygrabby
   m_Icon: {fileID: 0}
@@ -7355,7 +7355,7 @@ GameObject:
   - component: {fileID: 1196889174}
   - component: {fileID: 1196889176}
   - component: {fileID: 1196889175}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7427,7 +7427,7 @@ GameObject:
   - component: {fileID: 1215636009}
   - component: {fileID: 1215636011}
   - component: {fileID: 1215636010}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7499,7 +7499,7 @@ GameObject:
   - component: {fileID: 1219707746}
   - component: {fileID: 1219707748}
   - component: {fileID: 1219707747}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Inside_Plane.001_None
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7570,7 +7570,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1236257390}
   - component: {fileID: 1236257391}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: grabby_stuff2 (2)
   m_TagString: launchygrabby
   m_Icon: {fileID: 0}
@@ -7614,7 +7614,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1257123462}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 9boxes (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7654,7 +7654,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1259594279}
   - component: {fileID: 1259594280}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: tunnel_exit
   m_TagString: tunnel_exit
   m_Icon: {fileID: 0}
@@ -7700,7 +7700,7 @@ GameObject:
   - component: {fileID: 1264485751}
   - component: {fileID: 1264485750}
   - component: {fileID: 1264485749}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Tunnel_Icosphere.002_Tunnel_Mat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7790,7 +7790,7 @@ GameObject:
   - component: {fileID: 1271662552}
   - component: {fileID: 1271662554}
   - component: {fileID: 1271662553}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7862,7 +7862,7 @@ GameObject:
   - component: {fileID: 1273197664}
   - component: {fileID: 1273197666}
   - component: {fileID: 1273197665}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7932,7 +7932,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1280067664}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7970,7 +7970,7 @@ GameObject:
   - component: {fileID: 1290710899}
   - component: {fileID: 1290710901}
   - component: {fileID: 1290710900}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8041,7 +8041,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1308445335}
   - component: {fileID: 1308445336}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8106,7 +8106,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1327812741}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: grabby_stuff2 (7)
   m_TagString: launchygrabby
   m_Icon: {fileID: 0}
@@ -8142,7 +8142,7 @@ GameObject:
   - component: {fileID: 1335462385}
   - component: {fileID: 1335462384}
   - component: {fileID: 1335462383}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: box (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8241,7 +8241,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1336334578}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 9boxes (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8280,7 +8280,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1344347190}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: square_light (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8314,7 +8314,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1352457217}
   - component: {fileID: 1352457218}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: grabby_stuff2 (5)
   m_TagString: launchygrabby
   m_Icon: {fileID: 0}
@@ -8362,7 +8362,7 @@ GameObject:
   - component: {fileID: 1369153123}
   - component: {fileID: 1369153122}
   - component: {fileID: 1369153121}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: box (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8463,7 +8463,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1371081240}
   - component: {fileID: 1371081241}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8532,7 +8532,7 @@ GameObject:
   - component: {fileID: 1371525825}
   - component: {fileID: 1371525824}
   - component: {fileID: 1371525823}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: box (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8633,7 +8633,7 @@ GameObject:
   - component: {fileID: 1383626585}
   - component: {fileID: 1383626587}
   - component: {fileID: 1383626586}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8707,7 +8707,7 @@ GameObject:
   - component: {fileID: 1407158559}
   - component: {fileID: 1407158558}
   - component: {fileID: 1407158557}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8807,7 +8807,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1409418507}
   - component: {fileID: 1409418508}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: grabby_stuff2
   m_TagString: launchygrabby
   m_Icon: {fileID: 0}
@@ -8855,7 +8855,7 @@ GameObject:
   - component: {fileID: 1410179272}
   - component: {fileID: 1410179271}
   - component: {fileID: 1410179270}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: box (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8956,7 +8956,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1419361543}
   - component: {fileID: 1419361544}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: grabby_stuff2 (3)
   m_TagString: launchygrabby
   m_Icon: {fileID: 0}
@@ -9002,7 +9002,7 @@ GameObject:
   - component: {fileID: 1422681707}
   - component: {fileID: 1422681709}
   - component: {fileID: 1422681708}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Outside_Plane_None
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9076,7 +9076,7 @@ GameObject:
   - component: {fileID: 1423281953}
   - component: {fileID: 1423281952}
   - component: {fileID: 1423281951}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: box (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9178,7 +9178,7 @@ GameObject:
   - component: {fileID: 1431458869}
   - component: {fileID: 1431458871}
   - component: {fileID: 1431458870}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9248,7 +9248,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1434037453}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: grabby_stuff2 (7)
   m_TagString: launchygrabby
   m_Icon: {fileID: 0}
@@ -9284,7 +9284,7 @@ GameObject:
   - component: {fileID: 1450667818}
   - component: {fileID: 1450667817}
   - component: {fileID: 1450667816}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: box (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9387,7 +9387,7 @@ GameObject:
   - component: {fileID: 1468590653}
   - component: {fileID: 1468590652}
   - component: {fileID: 1468590651}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: box (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9490,7 +9490,7 @@ GameObject:
   - component: {fileID: 1469743483}
   - component: {fileID: 1469743482}
   - component: {fileID: 1469743481}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Arena_Sphere_Icosphere_Sphere_mat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9575,7 +9575,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1470564210}
   - component: {fileID: 1470564211}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GrabbyWall3Collider
   m_TagString: launchygrabby
   m_Icon: {fileID: 0}
@@ -9616,7 +9616,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1491382613}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SP_spawn
   m_TagString: Respawn
   m_Icon: {fileID: 0}
@@ -9648,7 +9648,7 @@ GameObject:
   - component: {fileID: 1513844330}
   - component: {fileID: 1513844332}
   - component: {fileID: 1513844331}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Inside_Plane.001_None
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9717,7 +9717,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1536686293}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: StuffOnWalls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9755,7 +9755,7 @@ GameObject:
   - component: {fileID: 1546720271}
   - component: {fileID: 1546720273}
   - component: {fileID: 1546720272}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9825,7 +9825,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1546722514}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: square_light (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9859,7 +9859,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1547928736}
   - component: {fileID: 1547928737}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: grabby_stuff2
   m_TagString: launchygrabby
   m_Icon: {fileID: 0}
@@ -9907,7 +9907,7 @@ GameObject:
   - component: {fileID: 1552175538}
   - component: {fileID: 1552175537}
   - component: {fileID: 1552175536}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: box (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10008,7 +10008,7 @@ GameObject:
   - component: {fileID: 1557502163}
   - component: {fileID: 1557502165}
   - component: {fileID: 1557502164}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10078,7 +10078,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1570569480}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: grabby_stuff2 (8)
   m_TagString: launchygrabby
   m_Icon: {fileID: 0}
@@ -10111,7 +10111,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1629263134}
   - component: {fileID: 1629263135}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10180,7 +10180,7 @@ GameObject:
   - component: {fileID: 1645079447}
   - component: {fileID: 1645079446}
   - component: {fileID: 1645079445}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: box (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10280,7 +10280,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1663881844}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: grabby_stuff2 (8)
   m_TagString: launchygrabby
   m_Icon: {fileID: 0}
@@ -10314,7 +10314,7 @@ GameObject:
   - component: {fileID: 1666379684}
   - component: {fileID: 1666379686}
   - component: {fileID: 1666379685}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10384,7 +10384,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1680933065}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: square_light (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10418,7 +10418,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1697563215}
   - component: {fileID: 1697563216}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: grabby_stuff2 (2)
   m_TagString: launchygrabby
   m_Icon: {fileID: 0}
@@ -10464,7 +10464,7 @@ GameObject:
   - component: {fileID: 1697771819}
   - component: {fileID: 1697771821}
   - component: {fileID: 1697771820}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10536,7 +10536,7 @@ GameObject:
   - component: {fileID: 1706967853}
   - component: {fileID: 1706967855}
   - component: {fileID: 1706967854}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10607,7 +10607,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1736588793}
   - component: {fileID: 1736588794}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10736,7 +10736,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1758852915}
   - component: {fileID: 1758852916}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: grabby_stuff2 (6)
   m_TagString: launchygrabby
   m_Icon: {fileID: 0}
@@ -10784,7 +10784,7 @@ GameObject:
   - component: {fileID: 1772216800}
   - component: {fileID: 1772216799}
   - component: {fileID: 1772216798}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: box (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10884,7 +10884,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1778580511}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: arenaSP 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10928,7 +10928,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1780322612}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: grabby_stuff2 (5)
   m_TagString: launchygrabby
   m_Icon: {fileID: 0}
@@ -10961,7 +10961,7 @@ GameObject:
   - component: {fileID: 1806611162}
   - component: {fileID: 1806611164}
   - component: {fileID: 1806611163}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11035,7 +11035,7 @@ GameObject:
   - component: {fileID: 1816558670}
   - component: {fileID: 1816558669}
   - component: {fileID: 1816558668}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11138,7 +11138,7 @@ GameObject:
   - component: {fileID: 1840184003}
   - component: {fileID: 1840184002}
   - component: {fileID: 1840184001}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: box (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11239,7 +11239,7 @@ GameObject:
   - component: {fileID: 1853776369}
   - component: {fileID: 1853776371}
   - component: {fileID: 1853776370}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11313,7 +11313,7 @@ GameObject:
   - component: {fileID: 1856338833}
   - component: {fileID: 1856338832}
   - component: {fileID: 1856338831}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: box (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11414,7 +11414,7 @@ GameObject:
   - component: {fileID: 1875493067}
   - component: {fileID: 1875493069}
   - component: {fileID: 1875493068}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11484,7 +11484,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1879711707}
   - component: {fileID: 1879711708}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GrabbyWall5Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11527,7 +11527,7 @@ GameObject:
   - component: {fileID: 1887053481}
   - component: {fileID: 1887053483}
   - component: {fileID: 1887053482}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11599,7 +11599,7 @@ GameObject:
   - component: {fileID: 1903336821}
   - component: {fileID: 1903336823}
   - component: {fileID: 1903336822}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11671,7 +11671,7 @@ GameObject:
   - component: {fileID: 1908726475}
   - component: {fileID: 1908726477}
   - component: {fileID: 1908726476}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11744,7 +11744,7 @@ GameObject:
   - component: {fileID: 1941205966}
   - component: {fileID: 1941205965}
   - component: {fileID: 1941205964}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Icosphere.001_Icosphere.001_top_light_glass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11829,7 +11829,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1952251566}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 9boxes (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11869,7 +11869,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1970773443}
   - component: {fileID: 1970773444}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GrabbyWall7Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11910,7 +11910,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1980081373}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: top_light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11948,7 +11948,7 @@ GameObject:
   - component: {fileID: 1990095113}
   - component: {fileID: 1990095112}
   - component: {fileID: 1990095111}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: box (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12047,7 +12047,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1999586654}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12080,7 +12080,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2001936054}
   - component: {fileID: 2001936055}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pedestal_trigger
   m_TagString: near_crystal
   m_Icon: {fileID: 0}
@@ -12125,7 +12125,7 @@ GameObject:
   - component: {fileID: 2006636293}
   - component: {fileID: 2006636295}
   - component: {fileID: 2006636294}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12196,7 +12196,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2020965161}
   - component: {fileID: 2020965162}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 4grabby2 (2)
   m_TagString: launchygrabby
   m_Icon: {fileID: 0}
@@ -12245,7 +12245,7 @@ GameObject:
   - component: {fileID: 2023745216}
   - component: {fileID: 2023745218}
   - component: {fileID: 2023745217}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12319,7 +12319,7 @@ GameObject:
   - component: {fileID: 2028687286}
   - component: {fileID: 2028687285}
   - component: {fileID: 2028687284}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: box (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12423,7 +12423,7 @@ GameObject:
   - component: {fileID: 2032408285}
   - component: {fileID: 2032408284}
   - component: {fileID: 2032408283}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12524,7 +12524,7 @@ GameObject:
   - component: {fileID: 2055553839}
   - component: {fileID: 2055553841}
   - component: {fileID: 2055553840}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Inside_Plane.001_None
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12596,7 +12596,7 @@ GameObject:
   - component: {fileID: 2056396293}
   - component: {fileID: 2056396295}
   - component: {fileID: 2056396294}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12670,7 +12670,7 @@ GameObject:
   - component: {fileID: 2058911482}
   - component: {fileID: 2058911481}
   - component: {fileID: 2058911480}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: box (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12770,7 +12770,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2100484732}
   - component: {fileID: 2100484733}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: grabby_stuff2 (1)
   m_TagString: launchygrabby
   m_Icon: {fileID: 0}
@@ -12818,7 +12818,7 @@ GameObject:
   - component: {fileID: 2107945253}
   - component: {fileID: 2107945252}
   - component: {fileID: 2107945251}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: box (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

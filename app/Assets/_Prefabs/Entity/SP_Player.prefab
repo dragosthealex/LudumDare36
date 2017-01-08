@@ -1218,6 +1218,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3910e698b97ee154c89503585c85627c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  launchForce: 10
+  walkSpeed: 4
+  fireRate: 1
+  gunPrefab: {fileID: 1000010783899786}
+  movementEnabled: 0
+  canGrab: 0
   isGrabbed: 1
   canGrabTo: {fileID: 0}
   grabbedTo: {fileID: 0}
@@ -1239,6 +1245,11 @@ MonoBehaviour:
   walkSpeed: 4
   fireRate: 1
   gunPrefab: {fileID: 1000010783899786}
+  rigBody: {fileID: 0}
+  player: {fileID: 0}
+  noGravityScript: {fileID: 0}
+  gun: {fileID: 0}
+  animController: {fileID: 0}
   movementEnabled: 0
   canGrab: 0
 --- !u!114 &114000011272933126
