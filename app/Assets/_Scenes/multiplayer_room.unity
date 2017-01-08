@@ -3177,7 +3177,7 @@ GameObject:
   - component: {fileID: 1552083318}
   m_Layer: 0
   m_Name: Sphere_bars_MeshPart1
-  m_TagString: Untagged
+  m_TagString: launchygrabby
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3326,7 +3326,7 @@ GameObject:
   - component: {fileID: 1624340480}
   m_Layer: 0
   m_Name: Sphere_bars_MeshPart2
-  m_TagString: Untagged
+  m_TagString: launchygrabby
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3584,7 +3584,7 @@ GameObject:
   - component: {fileID: 1751235352}
   m_Layer: 0
   m_Name: Sphere_bars_MeshPart3
-  m_TagString: Untagged
+  m_TagString: launchygrabby
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4215,7 +4215,7 @@ GameObject:
   - component: {fileID: 1889401961}
   m_Layer: 0
   m_Name: Sphere_bars_MeshPart0
-  m_TagString: Untagged
+  m_TagString: launchygrabby
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

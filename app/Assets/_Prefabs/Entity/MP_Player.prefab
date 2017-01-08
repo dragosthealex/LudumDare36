@@ -1305,7 +1305,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3910e698b97ee154c89503585c85627c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  launchForce: 10
+  launchForce: 50
   walkSpeed: 8
   movementEnabled: 1
   canGrab: 0
