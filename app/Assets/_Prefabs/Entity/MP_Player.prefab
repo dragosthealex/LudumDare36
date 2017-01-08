@@ -258,6 +258,7 @@ GameObject:
   - component: {fileID: 114008444364122302}
   - component: {fileID: 114776632079059644}
   - component: {fileID: 114727324983178712}
+  - component: {fileID: 114146215027068446}
   m_Layer: 11
   m_Name: MP_Player
   m_TagString: me
@@ -1252,6 +1253,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa2a0dd46be47ac43b609413409a1636, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114146215027068446
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1516135146244540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e4379a8d3f01564998f05436dda140b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gunPosition: {fileID: 4916029535405814}
+  fireRate: 1
+  canShoot: 0
+  weaponEffects: {fileID: 114648059695694298, guid: af75438377eecb045b8fbab361822e5b,
+    type: 2}
 --- !u!114 &114166347899388950
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1338,6 +1355,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1632126742385526}
         m_MethodName: SetActive
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114146215027068446}
+        m_MethodName: set_enabled
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
