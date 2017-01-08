@@ -65,8 +65,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPaused: 0
   dev: 0
+  isMultiplayer: 0
   walkSpeed: 4
   playerPF: {fileID: 1000013631992762, guid: 460905d83b1b955478b104c3ae812bbd, type: 2}
-  player: {fileID: 0}
+  player: {fileID: 1516135146244540, guid: aa6d585e0eb2b594380a40005730754d, type: 2}
   SP_spawn: {fileID: 0}
   level: 0

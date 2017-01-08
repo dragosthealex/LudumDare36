@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.Networking;
 
-public class Player : MonoBehaviour {
+public class Player : NetworkBehaviour {
 
 	public float launchForce; // Launch force. 10 should be kay
 	public float walkSpeed; // Walk speed
@@ -29,10 +29,14 @@ public class Player : MonoBehaviour {
 		canGrab = false;
 	}
 
+	public override void OnStartLocalPlayer() {
+		GameManager.instance.isMultiplayer = true;
+	}
+
 	void Update () {
 		
 		// Move
-		if (movementEnabled) {
+		if (movementEnabled && !(GameManager.instance.isPaused && GameManager.instance.isMultiplayer)) {
 			if (rigBody.useGravity) {
 				// When there is gravity, move normally (on floor)
 				MoveWithKeys ();
