@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-//using UnityEngine.Networking;
+using UnityEngine.Networking;
 
 public class Player : MonoBehaviour {
 
@@ -35,14 +35,6 @@ public class Player : MonoBehaviour {
 	}
 
 	void Update () {
-		// Enable / disable mouse look when pausing
-		if (GameManager.instance.isPaused) {
-			GetComponent<MouseLook> ().enabled = false;
-			return;
-		} else {
-			GetComponent<MouseLook> ().enabled = true;
-		}
-
 		// Move
 		if (movementEnabled) {
 			if (rigBody.useGravity) {
@@ -209,6 +201,14 @@ public class Player : MonoBehaviour {
 		rigBody.useGravity = false;
 		Camera.main.GetComponent<LayersHelper> ().Toggle ("invisible_gravity");
 		gameObject.GetComponentInChildren<CapsuleCollider> ().radius = 0.24f;
+	}
+
+	public void ToggleMovement(bool toggle) {
+		movementEnabled = toggle;
+	}
+
+	public void ToggleMouseLook(bool toggle) {
+		GetComponent<MouseLook> ().enabled = toggle;
 	}
 
 	private void activateCrystal() {

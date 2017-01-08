@@ -16,6 +16,7 @@ TagManager:
   - FirstPersonCamera
   - Fire
   - tunnel_enter
+  - RespawnNoGravity
   layers:
   - Default
   - TransparentFX

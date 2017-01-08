@@ -18,8 +18,7 @@ public class PanelsManager : MonoBehaviour {
 		MENU,
 		INGAME,
 		PAUSE,
-		TEXT,
-		OPTIONS
+		TEXT
 	}
 
 	private Text grabInfo;
@@ -42,5 +41,12 @@ public class PanelsManager : MonoBehaviour {
 	}
 	public void TogglePanel(PanelNames panelNo, bool active) {
 		panels [(int) panelNo].SetActive (active);
+	}
+
+	// Hides all panels
+	public void HideAll() {
+		foreach (PanelNames panelNo in System.Enum.GetValues(typeof(PanelNames))) {
+			TogglePanel (panelNo, false);
+		}
 	}
 }
