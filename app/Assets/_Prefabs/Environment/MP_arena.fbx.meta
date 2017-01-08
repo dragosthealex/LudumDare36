@@ -1,0 +1,185 @@
+fileFormatVersion: 2
+guid: eac20e542b626f74583eff4c5b322b67
+timeCreated: 1483857154
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Sphere
+    100004: Sphere_bars
+    100006: Sphere_bars_MeshPart0
+    100008: Sphere_bars_MeshPart1
+    100010: Sphere_bars_MeshPart2
+    100012: Sphere_bars_MeshPart3
+    100014: Sphere_MeshPart0
+    100016: Sphere_MeshPart1
+    100018: Sphere_MeshPart2
+    100020: Sphere_MeshPart3
+    100022: Sphere_MeshPart4
+    100024: Sphere_MeshPart5
+    100026: Sphere_MeshPart6
+    100028: Sphere_MeshPart7
+    100030: Team1Cube
+    100032: Team2Cube
+    100034: Torus
+    100036: Torus_MeshPart0
+    100038: Torus_MeshPart1
+    100040: Torus_MeshPart2
+    400000: //RootNode
+    400002: Sphere
+    400004: Sphere_bars
+    400006: Sphere_bars_MeshPart0
+    400008: Sphere_bars_MeshPart1
+    400010: Sphere_bars_MeshPart2
+    400012: Sphere_bars_MeshPart3
+    400014: Sphere_MeshPart0
+    400016: Sphere_MeshPart1
+    400018: Sphere_MeshPart2
+    400020: Sphere_MeshPart3
+    400022: Sphere_MeshPart4
+    400024: Sphere_MeshPart5
+    400026: Sphere_MeshPart6
+    400028: Sphere_MeshPart7
+    400030: Team1Cube
+    400032: Team2Cube
+    400034: Torus
+    400036: Torus_MeshPart0
+    400038: Torus_MeshPart1
+    400040: Torus_MeshPart2
+    2300000: Sphere_bars_MeshPart0
+    2300002: Sphere_bars_MeshPart1
+    2300004: Sphere_bars_MeshPart2
+    2300006: Sphere_bars_MeshPart3
+    2300008: Sphere_MeshPart0
+    2300010: Sphere_MeshPart1
+    2300012: Sphere_MeshPart2
+    2300014: Sphere_MeshPart3
+    2300016: Sphere_MeshPart4
+    2300018: Sphere_MeshPart5
+    2300020: Sphere_MeshPart6
+    2300022: Sphere_MeshPart7
+    2300024: Team1Cube
+    2300026: Team2Cube
+    2300028: Torus_MeshPart0
+    2300030: Torus_MeshPart1
+    2300032: Torus_MeshPart2
+    3300000: Sphere_bars_MeshPart0
+    3300002: Sphere_bars_MeshPart1
+    3300004: Sphere_bars_MeshPart2
+    3300006: Sphere_bars_MeshPart3
+    3300008: Sphere_MeshPart0
+    3300010: Sphere_MeshPart1
+    3300012: Sphere_MeshPart2
+    3300014: Sphere_MeshPart3
+    3300016: Sphere_MeshPart4
+    3300018: Sphere_MeshPart5
+    3300020: Sphere_MeshPart6
+    3300022: Sphere_MeshPart7
+    3300024: Team1Cube
+    3300026: Team2Cube
+    3300028: Torus_MeshPart0
+    3300030: Torus_MeshPart1
+    3300032: Torus_MeshPart2
+    4300000: Torus_MeshPart0
+    4300002: Torus_MeshPart1
+    4300004: Torus_MeshPart2
+    4300006: Sphere_bars_MeshPart0
+    4300008: Sphere_bars_MeshPart1
+    4300010: Sphere_bars_MeshPart2
+    4300012: Sphere_bars_MeshPart3
+    4300014: Sphere_MeshPart0
+    4300016: Sphere_MeshPart1
+    4300018: Sphere_MeshPart2
+    4300020: Sphere_MeshPart3
+    4300022: Sphere_MeshPart4
+    4300024: Sphere_MeshPart5
+    4300026: Sphere_MeshPart6
+    4300028: Sphere_MeshPart7
+    4300030: Team1Cube
+    4300032: Team2Cube
+    6400000: Sphere_bars_MeshPart0
+    6400002: Sphere_bars_MeshPart1
+    6400004: Sphere_bars_MeshPart2
+    6400006: Sphere_bars_MeshPart3
+    6400008: Sphere_MeshPart0
+    6400010: Sphere_MeshPart1
+    6400012: Sphere_MeshPart2
+    6400014: Sphere_MeshPart3
+    6400016: Sphere_MeshPart4
+    6400018: Sphere_MeshPart5
+    6400020: Sphere_MeshPart6
+    6400022: Sphere_MeshPart7
+    6400024: Team1Cube
+    6400026: Team2Cube
+    6400028: Torus_MeshPart0
+    6400030: Torus_MeshPart1
+    6400032: Torus_MeshPart2
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 50
+    meshCompression: 0
+    addColliders: 1
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
