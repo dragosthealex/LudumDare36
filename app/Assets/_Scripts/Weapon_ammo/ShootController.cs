@@ -59,15 +59,17 @@ public class ShootController : NetworkBehaviour {
 
 		// If we hit something, add force to it (and maybe deal damage)
 		bool result = Physics.Raycast (ray, out hit, range);
-		if (result) {
-			Rigidbody hitRBody = hit.rigidbody;
-			if (hitRBody) {
-				hitRBody.AddExplosionForce (40f, hit.point, 10f, 0f, ForceMode.Impulse);
-			}
+		if (result && hit.collider.GetComponentInParent<NetworkIdentity>() != null) {
+			RpcAddForce (hit.point, hit.collider.GetComponentInParent<NetworkIdentity>().netId);
 		}
 		RpcProcessShot (result, Vector3.zero, origin, rotation);
 	}
 
+	[ClientRpc]
+	public void RpcAddForce(Vector3 point, NetworkInstanceId id) {
+		ClientScene.FindLocalObject (id).gameObject.GetComponent<Rigidbody>()
+									.AddExplosionForce (40f, point, 10f, 0f, ForceMode.Impulse);
+	}
 
 	[ClientRpc]
 	public void RpcProcessShot(bool playImpact, Vector3 point, Vector3 origin, Quaternion rotation) {
