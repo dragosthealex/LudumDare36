@@ -1288,7 +1288,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1516135146244540}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 68ec2fe99d1108b9d0006a298d76c639, type: 3}
   m_Name: 
@@ -1305,7 +1305,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3910e698b97ee154c89503585c85627c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  launchForce: 10
+  launchForce: 50
   walkSpeed: 8
   movementEnabled: 1
   canGrab: 0

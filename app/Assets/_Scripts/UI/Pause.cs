@@ -5,9 +5,9 @@ public class Pause : MonoBehaviour {
 
 
 	private PanelsManager showPanels;						//Reference to the ShowPanels script used to hide and show UI panels
-	private bool isPaused;								//Boolean to check if the game is paused or not
 	private StartOptions startScript;					//Reference to the StartButton script
-	
+
+	private GameManager manager;
 	//Awake is called before Start()
 	void Awake()
 	{
@@ -15,19 +15,19 @@ public class Pause : MonoBehaviour {
 		showPanels = GetComponent<PanelsManager> ();
 		//Get a component reference to StartButton attached to this object, store in startScript variable
 		startScript = GetComponent<StartOptions> ();
+		manager = GameManager.instance;
 	}
 
 	// Update is called once per frame
 	void Update () {
-
 		//Check if the Cancel button in Input Manager is down this frame (default is Escape key) and that game is not paused, and that we're not in main menu
-		if (Input.GetButtonDown ("Cancel") && !isPaused && !startScript.inMainMenu) 
+		if (Input.GetButtonDown ("Cancel") && !manager.isPaused && !startScript.inMainMenu) 
 		{
 			//Call the DoPause function to pause the game
 			DoPause();
 		} 
 		//If the button is pressed and the game is paused and not in main menu
-		else if (Input.GetButtonDown ("Cancel") && isPaused && !startScript.inMainMenu) 
+		else if (Input.GetButtonDown ("Cancel") && manager.isPaused && !startScript.inMainMenu) 
 		{
 			//Call the UnPause function to unpause the game
 			UnPause ();
@@ -35,51 +35,41 @@ public class Pause : MonoBehaviour {
 	
 	}
 
-
+	// Pause the game (show the 'pause' panel)
 	public void DoPause()
 	{
-		//Set isPaused to true
-		isPaused = true;
-		//Set time.timescale to 0, this will cause animations and physics to stop updating
-		Time.timeScale = 0;
+		
 		//call the ShowPausePanel function of the ShowPanels script
 		showPanels.TogglePanel (PanelsManager.PanelNames.PAUSE, true);
-
-		// Game manager
-		GameManager manager = GameManager.instance;
-		if (manager) {
-			manager.isPaused = true;
-			manager.showMouse ();
+		manager.isPaused = true;
+		manager.showMouse ();
+		if (!manager.isMultiplayer) {
+			//Set time.timescale to 0, this will cause animations and physics to stop updating
+			Time.timeScale = 0;
 		}
 	}
 
-
+	// Unpause the game (hide the 'pause' panel)
 	public void UnPause()
 	{
-		//Set isPaused to false
-		isPaused = false;
-		//Set time.timescale to 1, this will cause animations and physics to continue updating at regular speed
-		Time.timeScale = 1;
 		//call the HidePausePanel function of the ShowPanels script
 		showPanels.TogglePanel (PanelsManager.PanelNames.PAUSE, false);
-
-		// Game manager
-		GameManager manager = GameManager.instance;
-		if (manager && manager.isPaused) {
-			manager.isPaused = false;
-			manager.hideMouse ();
+		manager.isPaused = false;
+		manager.hideMouse ();
+		if (!manager.isMultiplayer) {
+			//Set time.timescale to 0, this will cause animations and physics to stop updating
+			Time.timeScale = 1;
 		}
 	}
 
+	// Restart the game, going to the first scene
 	public void Restart() {
-		GameManager manager = GameManager.instance;
-
-		if (manager) {
-			showPanels.TogglePanel (PanelsManager.PanelNames.PAUSE, false);
+		if (!manager.isMultiplayer) {
 			Time.timeScale = 1;
-			startScript.inMainMenu = true;
-			manager.RestartGame ();
 		}
+		showPanels.TogglePanel (PanelsManager.PanelNames.PAUSE, false);
+		startScript.inMainMenu = true;
+		manager.RestartGame ();
 	}
 
 }

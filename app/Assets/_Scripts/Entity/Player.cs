@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.Networking;
 
-public class Player : MonoBehaviour {
+public class Player : NetworkBehaviour {
 
 	public float launchForce; // Launch force. 10 should be kay
 	public float walkSpeed; // Walk speed
@@ -29,10 +29,15 @@ public class Player : MonoBehaviour {
 		canGrab = false;
 	}
 
+	public override void OnStartLocalPlayer() {
+		GameManager.instance.isMultiplayer = true;
+		TheUI.instance.panelsScript.TogglePanel (PanelsManager.PanelNames.INGAME, true);
+	}
+
 	void Update () {
 		
 		// Move
-		if (movementEnabled) {
+		if (movementEnabled && !(GameManager.instance.isPaused && GameManager.instance.isMultiplayer)) {
 			if (rigBody.useGravity) {
 				// When there is gravity, move normally (on floor)
 				MoveWithKeys ();
@@ -55,47 +60,50 @@ public class Player : MonoBehaviour {
 						grabbyStuff();
 					}
 				}
-
-
-			}
-		}
-
-
-		// Keep grabbed
-		// TODO 
-		/*
-		if (isGrabbed && grabbedTo) {
-			keepGrabbed ();
-		}*/
-	}
-
-
-
-	private void keepGrabbed() {
-		// TODO
-		//transform.position = (grabbedTo.transform.position - grabbedOffset) + grabbedOffset;
-		//Transform grTo = grabbedTo.transform;
-		//transform.position = new Vector3 (grTo.position.x, grTo.position.y, grTo.position.z - grabbedDistance);
-		//transform.position = (transform.position - grabbedTo.transform.position).normalized 
-			// * grabbedDistance + grabbedTo.transform.position;
-		//transform.rotation = Quaternion.Euler(grabbedTo.transform.rotation.eulerAngles - grabbedOffsetRot.eulerAngles);
+			} // if
+		}// if
+		Raycasting ();
 	}
 
 	private void MoveWithKeys() {
 		transform.Translate (0, 0, Input.GetAxis ("Vertical")*Time.deltaTime * walkSpeed);
 	}
 
+	private void Raycasting() {
+		Vector3[] directions = new Vector3[6];
 
+		directions[0] = transform.TransformDirection (Vector3.forward);
+		directions[1] = transform.TransformDirection (Vector3.back);
+		directions[2] = transform.TransformDirection (Vector3.up);
+		directions[3] = transform.TransformDirection (Vector3.down);
+		directions[4] = transform.TransformDirection (Vector3.left);
+		directions[5] = transform.TransformDirection (Vector3.right);
+
+		RaycastHit hit;
+		bool ok = false;
+		foreach(Vector3 direction in directions) {
+			if (Physics.Raycast (transform.position, direction, out hit, 3)) {
+				// Something around us.
+				GameObject obj = hit.collider.gameObject;
+				if (obj.tag == "launchygrabby") {
+					canGrab = true;
+					canGrabTo = obj;
+					// Show the "Can grab" to the player
+					TheUI.instance.panelsScript.ShowGrabInfo (true, "Can grab");
+					ok = true;
+					break;
+				}
+			}
+		}
+		if (!ok) {
+			TheUI.instance.panelsScript.ShowGrabInfo (false, "");
+		}
+	}
 	void OnTriggerEnter (Collider col) {
 		string objTag = col.gameObject.tag;
 
 		// TODO: replace collider grabby with raycast grabby
-		if (objTag == "launchygrabby") {
-			canGrab = true;
-			canGrabTo = col.gameObject;
-			// Show the "Can grab" to the player
-			TheUI.instance.panelsScript.ShowGrabInfo (true, "Can grab");
-		} else if (objTag == "tunnel_enter") {
+		if (objTag == "tunnel_enter") {
 			TheUI.instance.showTextScript.DisplayText ("After falling through a pothole, you find yourself in the main" +
 				" room of some kind of an ancient temple. You notice a weak pulsating light coming from a crystal in the" +
 				" middle of the room. You can move with W and S, using the mouse for orientation.", 10, col.gameObject);
@@ -115,11 +123,6 @@ public class Player : MonoBehaviour {
 		string objTag = col.gameObject.tag;
 
 		if (objTag == "launchygrabby") {
-			// Hide the "Can grab" indication
-			TheUI.instance.panelsScript.ShowGrabInfo (false, "");
-			canGrab = false;
-			canGrabTo = null;
-			grabbedTo = null;
 		} else if (objTag == "spawnExit") {
 			deActivateGravity ();
 		}
@@ -144,23 +147,18 @@ public class Player : MonoBehaviour {
 		if (grabbedTo.GetComponentInParent<Rigidbody> ()) {
 			grabbedTo.GetComponentInParent<Rigidbody> ().isKinematic = true;
 		}
-		// Save offset between this and the grabbedTo
-		// grabbedOffset = grabbedTo.transform.position - transform.position;
-		// grabbedDistance = Vector3.Distance (grabbedTo.transform.position, transform.position);
-		// grabbedOffsetRot = Quaternion.Euler(grabbedTo.transform.rotation.eulerAngles - transform.rotation.eulerAngles);
 	}
 
 	// Ungrab from object
 	private void grabbyStuffUngrab() {
 		animController.SetLaunch ();
 
+		// Hide the "Can grab" indication
+		TheUI.instance.panelsScript.ShowGrabInfo (false, "");
+		canGrab = false;
 		isGrabbed = false;
 		canGrabTo = null; // Should be already null
 		grabbedTo = null;
-
-		// We ungrabbed
-		// Show that we grabbed
-		TheUI.instance.panelsScript.ShowGrabInfo (false, "");
 
 		// Enable collider and remove kinematic
 		animController.animatedModel.GetComponent<CapsuleCollider>().enabled = true;

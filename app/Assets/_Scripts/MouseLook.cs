@@ -39,6 +39,11 @@ public class MouseLook : MonoBehaviour {
 	}
 
 	void LateUpdate () {
+
+		if (GameManager.instance.isPaused && GameManager.instance.isMultiplayer) {
+			return;
+		}
+
 		mouseX = Input.GetAxis("Mouse X");
 		mouseY = -Input.GetAxis("Mouse Y");
 
