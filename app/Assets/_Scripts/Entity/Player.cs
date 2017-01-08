@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.Networking;
 
-public class Player : NetworkBehaviour {
+public class Player : MonoBehaviour {
 
 	public float launchForce; // Launch force. 10 should be kay
 	public float walkSpeed; // Walk speed
