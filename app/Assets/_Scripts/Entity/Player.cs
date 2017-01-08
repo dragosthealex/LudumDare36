@@ -124,6 +124,8 @@ public class Player : NetworkBehaviour {
 			canGrab = false;
 			canGrabTo = null;
 			grabbedTo = null;
+		} else if (objTag == "spawnExit") {
+			deActivateGravity ();
 		}
 	}
 
