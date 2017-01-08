@@ -202,7 +202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1f1466dd3c2a50449a14317a6fc40a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DestroyTime: 2
+  DestroyTime: 1
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -265,9 +265,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BeamColor: {r: 0.06582159, g: 0.86764705, b: 0, a: 1}
-  AnimationSpd: 0.05
+  AnimationSpd: 0.4
   Scale: 1
-  MaxLength: 50
+  MaxLength: 75
   bEnd: 0
   bGero: 0
 --- !u!114 &11400016
@@ -3047,7 +3047,7 @@ ParticleSystemRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_SelectedEditorRenderState: 3
+  m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89

@@ -669,8 +669,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1516135146244540}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.88, y: 20.12, z: -6.637}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: 259.498, y: 0.47079825, z: -0.49833754}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4815340622350402}
@@ -1266,6 +1266,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gunPosition: {fileID: 4916029535405814}
   fireRate: 1
+  range: 75
   canShoot: 0
   weaponEffects: {fileID: 114648059695694298, guid: af75438377eecb045b8fbab361822e5b,
     type: 2}

@@ -7,6 +7,7 @@ public class ShootController : NetworkBehaviour {
 
 	public Transform gunPosition; // The fire position
 	public float fireRate; // Fire rate per second
+	public float range;
 	public bool canShoot;
 	float elapsedTime;
 	public LaserWeapon weaponEffects;
@@ -50,7 +51,21 @@ public class ShootController : NetworkBehaviour {
 
 	[Command]
 	public void CmdFireShot(Vector3 origin, Vector3 direction, Quaternion rotation) {
-		RpcProcessShot (true, Vector3.zero, origin, rotation);
+
+		RaycastHit hit;
+
+		Ray ray = new Ray (origin, direction);
+		Debug.DrawRay (ray.origin, ray.direction * 3f, Color.red, 1f);
+
+		// If we hit something, add force to it (and maybe deal damage)
+		bool result = Physics.Raycast (ray, out hit, range);
+		if (result) {
+			Rigidbody hitRBody = hit.rigidbody;
+			if (hitRBody) {
+				hitRBody.AddExplosionForce (40f, hit.point, 10f, 0f, ForceMode.Impulse);
+			}
+		}
+		RpcProcessShot (result, Vector3.zero, origin, rotation);
 	}
 
 
