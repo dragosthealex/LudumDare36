@@ -120,6 +120,8 @@ public class Player : MonoBehaviour {
 			canGrab = false;
 			canGrabTo = null;
 			grabbedTo = null;
+		} else if (objTag == "spawnExit") {
+			deActivateGravity ();
 		}
 	}
 
