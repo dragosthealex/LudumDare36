@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.Networking;
 
-public class Player : MonoBehaviour {
+public class Player : NetworkBehaviour {
 
 	public float launchForce; // Launch force. 10 should be kay
 	public float walkSpeed; // Walk speed
@@ -35,6 +35,7 @@ public class Player : MonoBehaviour {
 	}
 
 	void Update () {
+		
 		// Move
 		if (movementEnabled) {
 			if (rigBody.useGravity) {
@@ -209,6 +210,11 @@ public class Player : MonoBehaviour {
 
 	public void ToggleMouseLook(bool toggle) {
 		GetComponent<MouseLook> ().enabled = toggle;
+	}
+
+	// Destroys this script for remote stuff
+	public void DestroyScript () {
+		Destroy (this);
 	}
 
 	private void activateCrystal() {

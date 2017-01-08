@@ -12,7 +12,6 @@ public class AnimController : MonoBehaviour {
 	}
 
 	public void SetShooting(bool value) {
-		print ("shooting " + value);
 		animator.SetBool ("shooting", value);
 	}
 

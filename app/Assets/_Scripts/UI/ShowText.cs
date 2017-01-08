@@ -24,16 +24,16 @@ public class ShowText : MonoBehaviour {
 		// Check if we already show something or not
 		if (!isShowing) {
 			panelScript.TogglePanel (PanelsManager.PanelNames.TEXT, true);
-		} else if (currentTrigger) {
+		} 
+		if (trigger) {
 			// If we had a trigger, destroy it after the text is changed
-			Destroy (currentTrigger);
+			Destroy (trigger);
 		}
 
 		// Change the text to new value
 		theText.text = text;
 		// Set the counter to time remaining
 		counter = (float) time;
-		// Set the trigger that 
 	}
 
 	// Hide the text, whatever it may be
@@ -46,10 +46,6 @@ public class ShowText : MonoBehaviour {
 		if (counter <= 0) {
 			theText.text = "";
 			panelScript.TogglePanel (PanelsManager.PanelNames.TEXT, false);
-			// Destroy the trigger if it is set
-			if (currentTrigger) {
-				Destroy (currentTrigger);
-			}
 			return;
 		}
 		// Else substract every second

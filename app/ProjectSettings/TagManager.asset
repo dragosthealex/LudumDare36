@@ -28,8 +28,8 @@ TagManager:
   - 
   - invisible_gravity
   - environment
-  - 
-  - 
+  - other_players
+  - local_player
   - 
   - 
   - 
