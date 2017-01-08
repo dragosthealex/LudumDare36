@@ -42,6 +42,18 @@ ModelImporter:
     100068: LIght_base.001
     100070: LIght_base.002
     100072: LIght_base.003
+    100074: Corner_light
+    100076: Corner_light.001
+    100078: Corner_light1
+    100080: Corner_light1.001
+    100082: Corner_light2
+    100084: Corner_light2.001
+    100086: Corner_light3
+    100088: Corner_light3.001
+    100090: Cube
+    100092: Team2Cube.001
+    100094: Team2Cube_lights
+    100096: Team2Cube_lights.001
     400000: //RootNode
     400002: Sphere
     400004: Sphere_bars
@@ -79,6 +91,18 @@ ModelImporter:
     400068: LIght_base.001
     400070: LIght_base.002
     400072: LIght_base.003
+    400074: Corner_light
+    400076: Corner_light.001
+    400078: Corner_light1
+    400080: Corner_light1.001
+    400082: Corner_light2
+    400084: Corner_light2.001
+    400086: Corner_light3
+    400088: Corner_light3.001
+    400090: Cube
+    400092: Team2Cube.001
+    400094: Team2Cube_lights
+    400096: Team2Cube_lights.001
     2300000: Sphere_bars_MeshPart0
     2300002: Sphere_bars_MeshPart1
     2300004: Sphere_bars_MeshPart2
@@ -112,6 +136,18 @@ ModelImporter:
     2300060: LIght_base.001
     2300062: LIght_base.002
     2300064: LIght_base.003
+    2300066: Corner_light
+    2300068: Corner_light.001
+    2300070: Corner_light1
+    2300072: Corner_light1.001
+    2300074: Corner_light2
+    2300076: Corner_light2.001
+    2300078: Corner_light3
+    2300080: Corner_light3.001
+    2300082: Cube
+    2300084: Team2Cube.001
+    2300086: Team2Cube_lights
+    2300088: Team2Cube_lights.001
     3300000: Sphere_bars_MeshPart0
     3300002: Sphere_bars_MeshPart1
     3300004: Sphere_bars_MeshPart2
@@ -145,6 +181,18 @@ ModelImporter:
     3300060: LIght_base.001
     3300062: LIght_base.002
     3300064: LIght_base.003
+    3300066: Corner_light
+    3300068: Corner_light.001
+    3300070: Corner_light1
+    3300072: Corner_light1.001
+    3300074: Corner_light2
+    3300076: Corner_light2.001
+    3300078: Corner_light3
+    3300080: Corner_light3.001
+    3300082: Cube
+    3300084: Team2Cube.001
+    3300086: Team2Cube_lights
+    3300088: Team2Cube_lights.001
     4300000: Torus_MeshPart0
     4300002: Torus_MeshPart1
     4300004: Torus_MeshPart2
@@ -178,6 +226,18 @@ ModelImporter:
     4300060: Light.001
     4300062: Light
     4300064: LIght_base
+    4300066: Cube
+    4300068: Corner_light3.001
+    4300070: Corner_light.001
+    4300072: Corner_light1.001
+    4300074: Corner_light2.001
+    4300076: Team2Cube.001
+    4300078: Team2Cube_lights.001
+    4300080: Team2Cube_lights
+    4300082: Corner_light2
+    4300084: Corner_light1
+    4300086: Corner_light
+    4300088: Corner_light3
     6400000: Sphere_bars_MeshPart0
     6400002: Sphere_bars_MeshPart1
     6400004: Sphere_bars_MeshPart2
@@ -211,6 +271,18 @@ ModelImporter:
     6400060: LIght_base.001
     6400062: LIght_base.002
     6400064: LIght_base.003
+    6400066: Corner_light
+    6400068: Corner_light.001
+    6400070: Corner_light1
+    6400072: Corner_light1.001
+    6400074: Corner_light2
+    6400076: Corner_light2.001
+    6400078: Corner_light3
+    6400080: Corner_light3.001
+    6400082: Cube
+    6400084: Team2Cube.001
+    6400086: Team2Cube_lights
+    6400088: Team2Cube_lights.001
   materials:
     importMaterials: 1
     materialName: 0

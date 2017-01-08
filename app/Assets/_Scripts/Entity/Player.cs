@@ -27,7 +27,6 @@ public class Player : MonoBehaviour {
 		animController = GetComponent<AnimController> ();
 		rigBody = GetComponent<Rigidbody> ();
 		canGrab = false;
-		walkSpeed = GameManager.instance.walkSpeed;
 	}
 
 	void Update () {
