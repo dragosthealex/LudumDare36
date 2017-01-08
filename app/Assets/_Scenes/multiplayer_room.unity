@@ -1746,6 +1746,28 @@ Prefab:
       propertyPath: m_InflateMesh
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4984664132588474, guid: 06c27c8336506a34b8ce3d4826d886e1, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4984664132588474, guid: 06c27c8336506a34b8ce3d4826d886e1, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4984664132588474, guid: 06c27c8336506a34b8ce3d4826d886e1, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 23013676449607322, guid: 06c27c8336506a34b8ce3d4826d886e1,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 77000409cf31b3e419e5140e613ee517, type: 2}
+    - target: {fileID: 114165012878537676, guid: 06c27c8336506a34b8ce3d4826d886e1,
+        type: 2}
+      propertyPath: m_ServerOnly
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 06c27c8336506a34b8ce3d4826d886e1, type: 2}
   m_IsPrefabParent: 0
