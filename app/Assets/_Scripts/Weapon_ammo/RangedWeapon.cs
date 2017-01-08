@@ -3,16 +3,7 @@ using System.Collections;
 
 public class RangedWeapon : MonoBehaviour {
 
-	public void Fire() {
+	public void  Fire(Transform tip) {}
 
-	}
-
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	}
+	public void Impact(Vector3 point) {}
 }

@@ -2,12 +2,10 @@
 using System.Collections;
 using UnityEngine.Networking;
 
-public class Player : NetworkBehaviour {
+public class Player : MonoBehaviour {
 
 	public float launchForce; // Launch force. 10 should be kay
 	public float walkSpeed; // Walk speed
-	public float fireRate; // Fire rate per second
-	public GameObject gunPrefab; // Prefab of the gun (the hand)
 
 	public bool movementEnabled; // I think this should be false :/
 	public bool canGrab; // True if in a trigger that allows grabbing
@@ -20,14 +18,12 @@ public class Player : NetworkBehaviour {
 
 	private Rigidbody rigBody; // this rigidbody
 	private NoGravityPhysicsStuff noGravityScript; // Script that deals with 0 g movemnet
-	private LaserGun gun; // The hand
 	private AnimController animController; // The animation controller
 
 	// Use this for initialization
 	void Awake () {
 		// Assign some vars
 		noGravityScript = GetComponent<NoGravityPhysicsStuff> ();
-		gun = gunPrefab.GetComponent<LaserGun> ();
 		animController = GetComponent<AnimController> ();
 		rigBody = GetComponent<Rigidbody> ();
 		canGrab = false;
@@ -61,8 +57,7 @@ public class Player : NetworkBehaviour {
 					}
 				}
 
-				// Aim and shoot
-				aimAndShoot();
+
 			}
 		}
 
@@ -75,19 +70,7 @@ public class Player : NetworkBehaviour {
 		}*/
 	}
 
-	private void aimAndShoot() {
-		// Start shooting
-		if (Input.GetKeyDown (KeyCode.Mouse0) && Input.GetKey(KeyCode.Mouse1)) {
-			StopCoroutine ("Fire");
-			StartCoroutine ("Fire");
-		}
-		// Aim
-		if (Input.GetKeyDown (KeyCode.Mouse1)) {
-			animController.SetShooting (true);
-		} else if (Input.GetKeyUp (KeyCode.Mouse1)) {
-			animController.SetShooting (false);
-		}
-	}
+
 
 	private void keepGrabbed() {
 		// TODO
@@ -103,13 +86,6 @@ public class Player : NetworkBehaviour {
 		transform.Translate (0, 0, Input.GetAxis ("Vertical")*Time.deltaTime * walkSpeed);
 	}
 
-	IEnumerator Fire() {
-		while (Input.GetKey (KeyCode.Mouse0) && Input.GetKey(KeyCode.Mouse1)) {
-			animController.SetShoot ();
-			gun.Fire ();
-			yield return new WaitForSeconds(fireRate);
-		}
-	}
 
 	void OnTriggerEnter (Collider col) {
 		string objTag = col.gameObject.tag;

@@ -1219,8 +1219,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   launchForce: 10
   walkSpeed: 4
-  fireRate: 1
-  gunPrefab: {fileID: 1000010783899786}
   movementEnabled: 0
   canGrab: 0
   isGrabbed: 1
@@ -1275,8 +1273,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb4edd4af50997b428bf286f3f298aa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 100002, guid: 5233ad8031c8bcc40a4ec895c2c8e74e, type: 2}
-  tip: {fileID: 4000012461793170}
+  bulletPrefab: {fileID: 0}
+  tip: {fileID: 0}
 --- !u!114 &114476452621912850
 MonoBehaviour:
   m_ObjectHideFlags: 1
