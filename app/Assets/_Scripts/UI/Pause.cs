@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Prototype.NetworkLobby;
 
 public class Pause : MonoBehaviour {
 
@@ -8,6 +9,8 @@ public class Pause : MonoBehaviour {
 	private StartOptions startScript;					//Reference to the StartButton script
 
 	private GameManager manager;
+	private LobbyManager lobbyManager;
+
 	//Awake is called before Start()
 	void Awake()
 	{
@@ -16,6 +19,7 @@ public class Pause : MonoBehaviour {
 		//Get a component reference to StartButton attached to this object, store in startScript variable
 		startScript = GetComponent<StartOptions> ();
 		manager = GameManager.instance;
+		lobbyManager = showPanels.panels [(int) PanelsManager.PanelNames.LOBBY].GetComponent<LobbyManager> ();
 	}
 
 	// Update is called once per frame
@@ -73,6 +77,8 @@ public class Pause : MonoBehaviour {
 			Time.timeScale = 1;
 		}
 		showPanels.TogglePanel (PanelsManager.PanelNames.PAUSE, false);
+		lobbyManager.GoBackButton ();
+		showPanels.TogglePanel (PanelsManager.PanelNames.LOBBY, false);
 		startScript.inMainMenu = true;
 		manager.RestartGame ();
 	}

@@ -1,9 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.Networking;
-using System.Collections.Generic;
 
-public class Player : NetworkBehaviour {
+public class PlayerSP : NetworkBehaviour {
 
 	public float launchForce; // Launch force. 10 should be kay
 	public float walkSpeed; // Walk speed
@@ -21,21 +20,6 @@ public class Player : NetworkBehaviour {
 	private NoGravityPhysicsStuff noGravityScript; // Script that deals with 0 g movemnet
 	private AnimController animController; // The animation controller
 
-	// Authoritative MP Stuff
-	private int sendStep = 0;
-	// TODO: make these controlls modifiable
-	private KeyCode[] keys;
-	/// <summary>
-	/// Keyboard input history, lower indexes are newer
-	/// </summary>
-	public List<HashSet<KeyCode>> history=new List<HashSet<KeyCode>>();
-	/// <summary>
-	/// How much history to keep?
-	/// history.Count will be max. this value
-	/// </summary>
-	[Range(1,1000)]
-	public int historyLengthInSteps=10;
-
 	// Use this for initialization
 	void Awake () {
 		// Assign some vars
@@ -43,8 +27,6 @@ public class Player : NetworkBehaviour {
 		animController = GetComponent<AnimController> ();
 		rigBody = GetComponent<Rigidbody> ();
 		canGrab = false;
-		//
-		keys = new KeyCode[6]{KeyCode.W, KeyCode.A, KeyCode.S, KeyCode.D, KeyCode.Q, KeyCode.E}; 
 	}
 
 	public override void OnStartLocalPlayer() {
@@ -83,19 +65,6 @@ public class Player : NetworkBehaviour {
 	}
 
 	private void MoveWithKeys() {
-		var keysThisFrame=new HashSet<KeyCode>();
-		if (Input.anyKeyDown) {
-			foreach (KeyCode kc in keys) {
-				if (Input.GetKey (kc)) {
-					keysThisFrame.Add (kc);
-					Debug.Log ("added " + kc.ToString());
-				}
-			}
-		}
-		int count = history.Count - historyLengthInSteps;
-		if (count > 0) {
-			history.RemoveRange (historyLengthInSteps, count);
-		}
 		transform.Translate (0, 0, Input.GetAxis ("Vertical")*Time.deltaTime * walkSpeed);
 	}
 
@@ -112,7 +81,7 @@ public class Player : NetworkBehaviour {
 		RaycastHit hit;
 		bool ok = false;
 		foreach(Vector3 direction in directions) {
-			if (Physics.Raycast (transform.position, direction, out hit, 2)) {
+			if (Physics.Raycast (transform.position, direction, out hit, 3)) {
 				// Something around us.
 				GameObject obj = hit.collider.gameObject;
 				if (obj.tag == "launchygrabby") {
@@ -129,24 +98,24 @@ public class Player : NetworkBehaviour {
 			TheUI.instance.panelsScript.ShowGrabInfo (false, "");
 		}
 	}
-
-	public void FixedUpdate() {
-		sendStep++;
-		if (sendStep == 5) {
-			for (int ago = history.Count - 1; ago >= 0; ago--) {
-				var s = string.Format ("{0:0000}:", ago);
-				foreach (var k in history[ago])
-					s += "\t" + k;
-				Debug.Log (s);
-			}
-			sendStep = 0;
-		}
-	}
-		
-	//------------Triggers------------
-
 	void OnTriggerEnter (Collider col) {
 		string objTag = col.gameObject.tag;
+
+		// TODO: replace collider grabby with raycast grabby
+		if (objTag == "tunnel_enter") {
+			TheUI.instance.showTextScript.DisplayText ("After falling through a pothole, you find yourself in the main" +
+				" room of some kind of an ancient temple. You notice a weak pulsating light coming from a crystal in the" +
+				" middle of the room. You can move with W and S, using the mouse for orientation.", 10, col.gameObject);
+		} else if (objTag == "tunnel_exit") {
+			TheUI.instance.showTextScript.DisplayText ("You feel a strange attraction towards the crystal. " +
+				"You also notice you are feeling lighter and lighter as you get closer...", 5, col.gameObject);
+		} else if (objTag == "near_crystal") {
+			TheUI.instance.showTextScript.DisplayText ("The crystal seems to give you power while it activates." +
+				" You feel the the gravity loses its force.Try your new powers aiming with Left Mouse Button" +
+				" and shooting with the right. You can aim to different surfaces and push yourself using " +
+				"W. When you are close to a grabbable surface, press space to grab.", 10, col.gameObject);
+			activateCrystal ();
+		}
 	}
 
 	void OnTriggerExit (Collider col) {
@@ -220,5 +189,28 @@ public class Player : NetworkBehaviour {
 	// Destroys this script for remote stuff
 	public void DestroyScript () {
 		Destroy (this);
+	}
+
+	private void activateCrystal() {
+		deActivateGravity ();
+		movementEnabled = false;
+		StartCoroutine ("activateCrystalCoroutine");
+	}
+
+	IEnumerator activateCrystalCoroutine() {
+		float time = 0f;
+		GameObject crystal = GameObject.FindGameObjectWithTag ("theCrystal");
+		crystal.GetComponent<Crystal> ().activate();
+		// Put the player up
+		// Also put the crystal up
+		while (time < 5f) {
+			time += Time.deltaTime;
+			transform.Translate (Vector3.up * Time.deltaTime * 2f, Space.World);
+			crystal.transform.Translate (Vector3.up * Time.deltaTime * 1f, Space.World);
+			yield return null;
+		}
+		// Enable movement
+		movementEnabled = true;
+		// Activate crystal
 	}
 }

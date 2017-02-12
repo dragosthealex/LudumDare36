@@ -1315,6 +1315,7 @@ MonoBehaviour:
   grabbedOffset: {x: 0, y: 0, z: 0}
   grabbedOffsetRot: {x: 0, y: 0, z: 0, w: 0}
   grabbedDistance: 5
+  historyLengthInSteps: 20
 --- !u!114 &114476206372104600
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -338,7 +338,6 @@ namespace Prototype.NetworkLobby
 
             return true;
         }
-
         // --- Countdown management
 
         public override void OnLobbyServerPlayersReady()

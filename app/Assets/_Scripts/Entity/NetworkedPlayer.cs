@@ -19,6 +19,18 @@ public class NetworkedPlayer : NetworkBehaviour {
 		EnablePlayer ();
 	}
 
+	// If we are a client
+	public override void OnStartClient() {
+		
+	}
+
+	// If we are a server
+	public override void OnStartServer() {
+
+
+	}
+
+	// Disables this player
 	public void DisablePlayer() {
 		if (isLocalPlayer) {
 			onToggleLocal.Invoke (false);
@@ -27,6 +39,7 @@ public class NetworkedPlayer : NetworkBehaviour {
 		}
 	}
 
+	// Enables this player
 	public void EnablePlayer() {
 		onToggleShared.Invoke (true);
 
