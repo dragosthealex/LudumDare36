@@ -18,7 +18,8 @@ public class PanelsManager : MonoBehaviour {
 		MENU,
 		INGAME,
 		PAUSE,
-		TEXT
+		TEXT,
+		LOBBY_TOP
 	}
 
 	private Text grabInfo;

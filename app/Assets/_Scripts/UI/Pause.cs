@@ -39,8 +39,11 @@ public class Pause : MonoBehaviour {
 	public void DoPause()
 	{
 		
-		//call the ShowPausePanel function of the ShowPanels script
+		// Show the pause panel and other info
 		showPanels.TogglePanel (PanelsManager.PanelNames.PAUSE, true);
+		if (manager.isMultiplayer) {
+			showPanels.TogglePanel (PanelsManager.PanelNames.LOBBY_TOP, true);
+		}
 		manager.isPaused = true;
 		manager.showMouse ();
 		if (!manager.isMultiplayer) {
@@ -59,6 +62,8 @@ public class Pause : MonoBehaviour {
 		if (!manager.isMultiplayer) {
 			//Set time.timescale to 0, this will cause animations and physics to stop updating
 			Time.timeScale = 1;
+		} else {
+			showPanels.TogglePanel (PanelsManager.PanelNames.LOBBY_TOP, false);
 		}
 	}
 

@@ -15,9 +15,13 @@ namespace Prototype.NetworkLobby
         public InputField ipInput;
         public InputField matchNameInput;
 
+		private PanelsManager showPanels;
+
         public void OnEnable()
         {
-            lobbyManager.topPanel.ToggleVisibility(true);
+			showPanels = TheUI.instance.GetComponent<PanelsManager> ();
+
+			showPanels.TogglePanel (PanelsManager.PanelNames.LOBBY_TOP, true);
 
             ipInput.onEndEdit.RemoveAllListeners();
             ipInput.onEndEdit.AddListener(onEndEditIP);

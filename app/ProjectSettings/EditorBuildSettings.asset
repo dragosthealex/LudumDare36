@@ -13,3 +13,5 @@ EditorBuildSettings:
     path: Assets/_Scenes/training_room.unity
   - enabled: 1
     path: Assets/_Scenes/multiplayer_room.unity
+  - enabled: 1
+    path: Assets/_Scenes/mp_lobby.unity
