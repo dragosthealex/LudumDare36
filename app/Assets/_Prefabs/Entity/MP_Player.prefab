@@ -1467,7 +1467,7 @@ MonoBehaviour:
   m_SendInterval: 0.16666667
   m_SyncRotationAxis: 7
   m_RotationSyncCompression: 0
-  m_SyncSpin: 0
+  m_SyncSpin: 1
   m_MovementTheshold: 0.001
   m_SnapThreshold: 5
   m_InterpolateRotation: 15
