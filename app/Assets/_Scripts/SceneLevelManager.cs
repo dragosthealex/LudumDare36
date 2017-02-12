@@ -42,6 +42,12 @@ public class SceneLevelManager : MonoBehaviour {
 			TheUI.instance.panelsScript.TogglePanel (PanelsManager.PanelNames.MENU, false);
 			// Network Manager will do the player stuff
 			break;
+		case 3:
+			// In lobby (multiplayer)
+			TheUI.instance.startScript.inMainMenu = false;
+			TheUI.instance.panelsScript.HideAll ();
+			TheUI.instance.panelsScript.TogglePanel (PanelsManager.PanelNames.LOBBY, true);
+			break;
 		}
 	}
 }
